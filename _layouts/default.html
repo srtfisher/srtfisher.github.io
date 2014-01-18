@@ -1,72 +1,85 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <meta name="viewport" content="width=device-width">
-   <title>{{ page.title }}</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <title>{{ page.title }}</title>
    <meta name="author" content="Sean Fisher" />
-   <link href="http://seanfisher.co/rss" rel="alternate" title="Sean Fisher's Blog" type="application/atom+xml" />
+   <link href="http://seanfisher.co/rss" rel="alternate" title="Sean Fisher" type="application/atom+xml" />
 
    <!-- syntax highlighting CSS -->
    <!-- <link rel="stylesheet" href="/css/syntax.css" type="text/css" /> -->
 
    <!-- Homepage CSS -->
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 
    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
+   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2"></script>
+   <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
-<body>
-<header class="<?php if (is_front_page()) echo 'loading'; ?>">
-        <div id="top-border"></div>
+
+<body class=" {% if page.url == '/index.html' %} home {% endif %}">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="global-nav">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="{{ site.baseurl }}" class="site-logo"><img src="/img/logo.png" /></a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
         
-        <div class="container">
-            <div class="row">
-                <div class="span3 site-logo">
-                    <a href="/"><img src="/img/logo.png" /></a>
-                </div>
-                
-                <div class="span9">
-                    <nav id="site-nav-wrap">
-                        <ul id="site-nav">
-                            <li id="nav-home" <?php if (is_front_page() ) echo 'class="active"'; ?>><a href="<?=site_url('')?>" data-target="#spotlight">Home <div class="arrow"><div class="fill"></div></div></a></li>
-                            <li id="nav-about"><a href="<?=site_url('')?>#about" data-target="#about">About Me <div class="arrow"><div class="fill"></div></div></a></li>
-                            <li id="nav-work"><a href="<?=site_url('')?>#work" data-target="#work">Work Portfolio <div class="arrow"><div class="fill"></div></div></a></li>
-                            <li <?php if (get_the_title() == 'Blog' ) echo 'class="active"'; ?>><a href="<?=site_url('blog')?>">Blog <div class="arrow"><div class="fill"></div></div></a></li>
-                            <li id="nav-contact"><a href="<?=site_url('')?>#contact" data-target="#contact">Contact Me <div class="arrow"><div class="fill"></div></div></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+        <ul class="nav navbar-nav navbar-right">
+            <li id="nav-home" {% if page.url == '/index.html' %} class="active" {% endif %}>
+              <a href="{{ site.baseurl }}" data-target="#spotlight">Home</a>
+            </li>
+            <li id="nav-about"  {% if page.url == '/about.html' %} class="active" {% endif %}>
+                <a href="{{ site.baseurl }}about" data-target="#about">About Me</a>
+            </li>
+            <li id="nav-services"  {% if page.url == '/services.html' %} class="active" {% endif %}>
+                <a href="{{ site.baseurl }}services?utm_source=seanfisherco&utm_medium=link&utm_content=header&utm_campaign=services">Services</a>
+            </li>
+            <li id="nav-work">
+                <a href="{{ site.baseurl }}#work" data-target="#work">Portfolio</a>
+            </li>
+            <li id="nav-blog"  {% if page.url == '/blog.html' %} class="active" {% endif %}>
+                <a href="/blog">Blog</a>
+            </li>
+            <li id="nav-contact"  {% if page.url == '/contact.html' %} class="active" {% endif %}>
+                <a href="{{ site.baseurl }}contact?utm_source=seanfisherco&utm_medium=link&utm_content=header&utm_campaign=contact" data-target="#contact" data-medium="header">Contact Me</a>
+            </li>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <!-- Content Start -->
 {{ content }}
 <!-- Content End -->
 
 <!-- Footer -->
-<footer>
-<div class="container">
-    <div class="row">
-        <div class="span6">
-            <ul class="clearfix">
-                <li><a href="http://twitter.com/srtfisher/">Sean on Twitter</a></li>
-                <li><a href="http://linkedin.com/in/srtfisher">LinkedIn</a></li>
-            </ul>
-        </div>
-        
-        <div class="span5" style="text-align:right;">
-            &copy; 2014 Sean Fisher
-        </div>
-    </div>
-    
-    <div class="final-quote">
-        <p>A man should look for what is, and not for what he thinks should be.</p>
-        <cite>Albert Einstein</cite>
-    </div>
-</div>
+<!-- Footer -->
+<footer id="global-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-7">
+              <ul class="clearfix">
+                  <li><a href="http://github.com/srtfisher" target="_blank" rel="self">GitHub</a></li>
+                  <li><a href="http://twitter.com/srtfisher" target="_blank" rel="self">Twitter</a></li>
+                  <li><a href="http://linkedin.com/in/srtfisher" target="_blank" rel="self">LinkedIn</a></li>
+              </ul>
+          </div>
+          
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-5" style="text-align:right;">
+              &copy; 2014 <a href="http://seanfisher.co/">Sean Fisher</a>
+          </div>
+      </div>
+  </div>
 </footer>
 </body>
 </html>
-
-

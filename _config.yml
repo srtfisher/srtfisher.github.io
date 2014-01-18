@@ -1,2 +1,17 @@
-markdown: rdiscount
-pygments: true
+source:      .
+destination: ./_site
+includes:    ./_includes
+
+pygments:    true
+markdown:    rdiscount
+permalink:   /:title.html
+
+base_url: http://seanfisher.co
+#base_url: /
+description: "Sean Fisher (srtfisher) is full stack developer from New York City. Sean works to build web applications that are beautiful and useable. Provides services to businesses to improve profits and performance."
+root_desc: "Sean Fisher"
+
+rdiscount:
+  extensions: []
+
+exclude: ['README', 'Gruntfile.js']

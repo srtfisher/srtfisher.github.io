@@ -67,5 +67,5 @@ module.exports = function (grunt) {
 
     // The dev task will be used during development
     grunt.registerTask("dev", ["clean", "less:compile", "watch:styles"]);
-    grunt.registerTask("build", ["clean", "less:compile", "cssmin", "shell"]);
+    grunt.registerTask("build", ["clean", "less:compile", "cssmin"]);
 };
