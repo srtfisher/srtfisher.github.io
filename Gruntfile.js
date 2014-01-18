@@ -35,6 +35,15 @@ module.exports = function (grunt) {
             copyCss: {
                 command: "cp css/screen.css _site/css/screen.css"
             }
+        },
+
+        bower: {
+          dev: {
+            dest: 'dest/path',
+            options: {
+              basePath: 'components/'
+            }
+          }
         }
     });
 
