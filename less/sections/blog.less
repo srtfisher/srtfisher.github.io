@@ -1,0 +1,154 @@
+section.blog {
+    padding-top: 100px;
+    div.container {
+        width: 820px; // Subtract 2 cols
+    }
+    
+    
+    article {
+        margin-bottom: 40px;
+        .clearfix();
+		
+        .article-meta {
+            font-size: 12px;
+            font-weight: 300;
+            margin: 0 0 10px;
+            color: #888;
+            
+            a { color: #777; }
+        }
+        
+        .btn-permalink {
+            background: @blueDark;
+            color: white;
+            display: inline-block;
+            .border-radius(6px);
+            padding: 4px 10px;
+            .text-shadow(0 1px 0 darken(@blueDark, 20%));
+            .box-shadow(0 1px 0 white);
+            
+            &:hover {
+                background: @red;
+                text-decoration: none;
+            }
+            
+            &:active {
+                position: relative;
+                top:2px;
+            }
+        }
+        
+        .post-title-wrap {
+            padding: 18px 0 0;
+
+            .post-title {
+                font-size: 36px;
+                line-height: 1em;
+                color: black;
+
+                a {
+                    color: inherit;
+
+                    &:hover {
+                        color: lighten(black, 20%);
+                        .transition (.25s);
+                        text-decoration: none;
+                    }
+                }
+            }
+            .post-meta {
+                font-weight: normal;
+                color: #9B9B9B;
+                font-size: 13px;
+                line-height: 15px;
+                margin: 0 0 10px;
+
+                a {
+                    color: darken(#9B9B9B, 25%);
+                }
+            }
+        }
+
+        .page-cta {
+            border-radius: 4px;
+            background: white;
+            background: #EDEFF0;
+            box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+            margin: 20px 0 40px;
+
+            .page-cta-inner {
+              //  background: lighten(#EDEFF0, 5%);
+                padding: 18px;
+
+                h3 {
+                    color: #384047;
+                    margin: 5px 0 10px;
+                    font: 400 27px/35px @fontsans;
+                    margin: 0 0 15px;
+                    padding: 0;
+                }
+
+                p {
+                    font: normal 16px/27px @fontsans;
+                    color: #555;
+                    margin: 0; padding: 0;
+                }
+            }
+
+            .page-cta-footer {
+                padding: 18px;
+                background: darken(#EDEFF0, 10%);
+                border-bottom: 1px solid darken(#EDEFF0, 20%);
+                border-radius: 0 0 4px 4px;
+
+                p { padding: 0; margin: 0; }
+
+                .btn {
+                    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+                    border-bottom-width: 3px;
+                }
+            }
+        }
+        .content-wrap {
+            @import '../posting.less';
+            
+            .clearfix ();
+        }
+    }
+}
+
+.wp-pagenavi-wrap {
+    border-top: 1px solid #D8D8D8;
+
+    .wp-pagenavi {
+        width:50%;
+        margin: 0 auto;
+        font-family: @fontsans;
+        text-align: justify;
+
+        a, span {
+            display: inline-block;
+            padding: 12px 15px;
+            font-size: 15px;
+            position: relative;
+            top: -1px;
+            color: #555;
+
+            &.current, &:hover {
+                border-top: 1px solid darken(#d8d8d8, 30%);
+                text-decoration: none;
+                color: #333;
+                .transition (none);
+            }
+        }
+    }
+}
+
+
+.share-it {
+    border-top: 1px solid #DDD;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #DDD;
+    background: rgba(100, 100, 100, 0.04);
+}

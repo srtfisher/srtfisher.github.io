@@ -1,0 +1,47 @@
+body.darker-header #global-nav {
+    .box-shadow  (0 -6px 20px black);
+}
+.nav-a-active () {
+    color: black;
+    font-weight: bold;
+    background: none;
+}
+
+#global-nav {
+    background: white;
+    padding: 15px 0;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 600;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    .box-shadow (0 -6px 20px rgba(0,0,0,0.2));
+    
+    .site-logo {
+        img { height: 75px; }
+    }
+    ul.nav {
+        li {
+            margin-right: 10px;
+
+            a {
+                font-family: @fontsans;
+                padding: 24px 18px;
+                font-size: 18px;
+                color: #777;
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+            &.active a {
+                .nav-a-active ();
+            }
+        }
+    }
+}
+
+body.blog ul.nav #nav-blog a {
+    .nav-a-active;
+}

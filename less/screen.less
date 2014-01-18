@@ -1,0 +1,170 @@
+@import 'variables.less';
+@import 'mixins.less';
+@blue: #049cdb;
+@blueDark: #0064cd;
+@fontserif: 'Cutive', serif;
+@fontsans: 'Open Sans', sans-serif;
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+body {
+    padding-top: 81px;
+    font:14px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+    a {
+        .transition (.25s);
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: @fontsans;
+}
+
+section.focus-area {
+    padding: 65px 0;
+    
+    &.dark { background: #F4F4F4; }
+    &.super-dark, &.services {
+        background: #2980b9;
+
+        h1, h2, h3, h4 p { color: white; }
+
+        p {
+            color: darken(white, 5%);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(255,255,255,0.3);
+
+            &:hover {
+                border-bottom-color: white;
+            }
+        }
+
+        span.yellow { color: black; }
+
+        .leading {
+            text-shadow: 0 1px 0 black;
+
+            span.yellow { text-shadow: none; }
+        }
+    }
+
+    &.services {
+        background: url('../img/services-bg.jpg');
+        background-size: cover;
+        padding: 150px 0;
+    }
+
+    p.leading {
+        text-align: center;
+        font-family: @fontsans;
+        margin: 0 auto;
+        width: 90%;
+
+        strong.dark {
+            font-weight: 400;
+            color: #555;
+        }
+    }
+
+    .action-btns {
+        text-align: center;
+        margin: 50px 0 0;
+
+        .btn {
+            .border-radius (0);
+            padding: 12px 25px;
+            font-size: 20px;
+            line-height: 30px;
+            font-family: @fontsans;
+            border-width: 3px;
+
+            &.btn-default {
+                border-color: #555;
+                background: transparent;
+                margin-left: 20px;
+
+                &:hover { background: white; }
+            }
+        }
+    }
+}
+
+// Typography
+h2.leading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 58px;
+    letter-spacing: -1px;
+    color: #333;
+    margin-bottom: 20px;
+
+    span.yellow {
+        background: yellow;
+        padding: 0 5px;
+    }
+}
+
+p.leading {
+    color: #A0A0A0;
+    font-size: 21px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+    font-weight: 300;
+    font-family: @fontsans;
+}
+.section-title {
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0 0 15px;
+}
+.section-sub {
+    font-weight:300;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.btn.btn-flat {
+    border-width: 3px;
+    border-radius: 0;
+
+    &.btn-default {
+        border-color: black;
+    }
+
+    &:focus {
+        outline: none;
+        .box-shadow (none);
+    }
+}
+
+@import 'sections/header.less';
+@import 'sections/about.less';
+@import 'sections/work-listing.less';
+@import 'sections/what-i-work-on.less';
+@import 'sections/contact.less';
+@import 'sections/single-work.less';
+@import 'sections/footer.less';
+@import 'sections/blog.less';
+@import 'sections/open-source.less';
+@import 'sections/services.less';
+
+// =============================
+// Responsive
+// =============================
+@import 'sections/responsive-sm.less';
+@import 'sections/responsive-md.less';
+@import 'sections/responsive-lg.less';
+
+img#wpstats{display:none;}
