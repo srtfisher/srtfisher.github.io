@@ -4,7 +4,7 @@ includes:    ./_includes
 
 pygments:    true
 markdown:    rdiscount
-permalink:   /:title.html
+permalink:   /:title
 
 base_url: http://seanfisher.co
 #base_url: /
@@ -13,5 +13,6 @@ root_desc: "Sean Fisher"
 
 rdiscount:
   extensions: []
+
 
 exclude: ['README', 'Gruntfile.js']

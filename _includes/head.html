@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <title>{{ page.title }}</title>
+   <meta name="author" content="Sean Fisher" />
+   <link href="http://seanfisher.co/rss" rel="alternate" title="Sean Fisher" type="application/atom+xml" />
+
+   <!-- syntax highlighting CSS -->
+   <!-- <link rel="stylesheet" href="/css/syntax.css" type="text/css" /> -->
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
+   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2"></script>
+   <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+
+<body class=" {% if page.url == '/index.html' %} home {% endif %}">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="global-nav">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="{{ site.baseurl }}" class="site-logo"><img src="/img/logo.png" /></a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        
+        <ul class="nav navbar-nav navbar-right">
+            <li id="nav-home" {% if page.url == '/index.html' %} class="active" {% endif %}>
+              <a href="{{ site.baseurl }}" data-target="#spotlight">Home</a>
+            </li>
+            <li id="nav-about"  {% if page.url == '/about.html' %} class="active" {% endif %}>
+                <a href="{{ site.baseurl }}about" data-target="#about">About Me</a>
+            </li>
+            <li id="nav-services"  {% if page.url == '/services.html' %} class="active" {% endif %}>
+                <a href="{{ site.baseurl }}services?utm_source=seanfisherco&utm_medium=link&utm_content=header&utm_campaign=services">Services</a>
+            </li>
+            <li id="nav-work">
+                <a href="{{ site.baseurl }}#work" data-target="#work">Portfolio</a>
+            </li>
+            <li id="nav-blog"  {% if page.url == '/blog.html' %} class="active" {% endif %}>
+                <a href="/blog">Blog</a>
+            </li>
+            <li id="nav-contact"  {% if page.url == '/contact.html' %} class="active" {% endif %}>
+                <a href="{{ site.baseurl }}contact?utm_source=seanfisherco&utm_medium=link&utm_content=header&utm_campaign=contact" data-target="#contact" data-medium="header">Contact Me</a>
+            </li>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,40 @@
+{% include head.html %}
+<section class="single-work">
+    <div class="container">
+        <div class="featured-image">
+            <img src="{{ page.image }}" />
+        </div>
+        
+        <hr />
+        
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 work-featured">
+                <h2>{{ page.title }}</h2>
+                <h4><a href="{{ page.url }}" target="_blank">{{ page.domain }}</a></h4>
+                {{ content }}
+            </div>
+              
+            <div class="col-lg-3 col-md-3 col-sm-3 work-sidebar">
+                <h4>Work Performed</h4>
+                {% for post in page.work_performed %}
+                  <p>- {{ post }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="container footer-container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h3>Like what you're seeing?</h3>
+                <p class="lead">I create amazing solutions and I would love to work with you.</p>
+            </div>
+            
+            <div class="col-sm-4">
+                <a class="btn btn-primary btn-large" href="{{ site.baseurl }}contact?utm_source=seanfisherco&utm_medium=cta-button&utm_content=single-work-start-project&utm_campaign=contact&project">Start Your Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+<?php get_footer(); ?>
+{% include foot.html %}
