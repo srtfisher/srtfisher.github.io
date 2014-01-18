@@ -2,7 +2,7 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         // The clean task ensures the parsed css is removed
-        clean: ["_site/css/"],
+        clean: ["_site/css/", "css"],
 
         // Compress generated css files
         cssmin: {
@@ -43,6 +43,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
     grunt.loadNpmTasks("grunt-contrib-less");
+    grunt.loadNpmTasks("grunt-bower");
     grunt.loadNpmTasks("grunt-shell");
 
     // The default task will show the usage
@@ -57,5 +58,5 @@ module.exports = function (grunt) {
 
     // The dev task will be used during development
     grunt.registerTask("dev", ["clean", "less:compile", "watch:styles"]);
-    grunt.registerTask("build", ["clean", "less:compile", "cssmin"]);
+    grunt.registerTask("build", ["clean", "less:compile", "cssmin", "shell"]);
 };

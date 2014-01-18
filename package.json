@@ -16,6 +16,8 @@
     "grunt-contrib-less": "0.9.*",
     "grunt-contrib-watch": "*",
     "grunt-shell": "~0.2.1",
-    "grunt-contrib-uglify": "0.3.*"
+    "grunt-contrib-uglify": "0.3.*",
+    "grunt-github-pages": "0.0.4",
+    "grunt-bower": "~0.7.0"
   }
 }
