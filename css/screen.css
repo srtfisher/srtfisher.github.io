@@ -1,10 +1,14 @@
 body {
+  background: #F5F5F5;
   padding-top: 81px;
   font: 14px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 body a {
   -webkit-transition: 0.25s;
   transition: 0.25s;
+}
+.content-wrap {
+  background: white;
 }
 h1,
 h2,
@@ -226,9 +230,6 @@ section.portfolio-listing {
 }
 section.portfolio-listing .work-piece {
   margin-bottom: 20px;
-}
-section.portfolio-listing img {
-  -webkit-filter: grayscale(0);
 }
 section.portfolio-listing a:hover {
   text-decoration: none;
@@ -489,6 +490,7 @@ section.single-work div.footer-container .btn.btn-primary:hover {
   padding: 5px 10px;
 }
 section.blog {
+  background: white;
   padding-top: 100px;
 }
 section.blog div.container {

@@ -16,7 +16,8 @@ tags:
 - plugins
 - wordpress
 ---
-<a href="http://talkingwithsean.com/wp-content/uploads/wordpresslogo-teaser1.jpg"><img class="alignright size-full wp-image-286" title="wordpresslogo-teaser1" src="http://talkingwithsean.com/wp-content/uploads/wordpresslogo-teaser1.jpg" alt="" width="600" height="250" /></a>In light of a recent blog post about stats that were collected previously with this plugin, I'd like to express a few things.
+
+In light of a recent blog post about stats that were collected previously with this plugin, I'd like to express a few things.
 
 Several users were having issues with getting the hidden path setup. These were only temporarily put in so we could have an understanding of the issues that user's are having. They were just taken out in 1.7.
 

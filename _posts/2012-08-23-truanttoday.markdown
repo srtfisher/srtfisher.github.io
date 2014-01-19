@@ -3,13 +3,18 @@ layout: work
 status: publish
 published: true
 title: TruantToday
-author: seanfisher
-author_login: seanfisher
-author_email: hi@seanfisher.co
-wordpress_id: 624
-wordpress_url: http://seanfisher.co/?post_type=work&amp;p=624
 date: 2012-08-23 11:11:54.000000000 -04:00
 categories: []
+
+permalink: work/truanttoday/
+
+work_performed:
+- Rebuilt application from older framework/code base
+- Twilio SMS/Call Intergration
+- International Support
+image: /img/work/truanttoday.jpg
+url: 'http://truanttoday.com/'
+domain: 'truanttoday.com'
 tags: []
 ---
 TruantToday strives to improve the lives &mdash; and educational experiences &mdash; of students everywhere. Truancy robs students of their education, schools of their funding, and communities of their safety, and TruantToday reduces and removes the corrosive influence that truancy has on these three groups.
