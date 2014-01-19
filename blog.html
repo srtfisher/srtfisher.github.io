@@ -4,11 +4,28 @@ title: Sean Fisher
 permalink: blog/
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<section class="blog">
+    <div class="container">
+        {% for post in site.posts %}
+          {% if post.layout == 'post' %}
+            <article>
+                <div class="post-title-wrap">
+                    <h4 class="post-title">
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </h4>
+                    
+                    <h4 class="post-meta">{{ post.date | date_to_string }}</h4>
+                </div>
+                
+                <div class="content-wrap listing">
+                  {{ post.content }}
+                </div>
+                <?php endif; ?>
+                
+                
+                <a href="{{ post.url }}" class="btn btn-primary right">Read More &rarr;</a>
+            </article>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>

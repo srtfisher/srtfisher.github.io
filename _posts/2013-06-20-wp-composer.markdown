@@ -19,7 +19,7 @@ tags:
 - plugins
 - wordpress
 ---
-[caption id="attachment_728" align="alignnone" width="772"]<img class="size-full wp-image-728" alt="wp-composer" src="http://wp.seanfisher.co/wp-content/uploads/2013/06/banner-772x250-1.png" width="772" height="250" /> WordPress meet Composer.[/caption]
+<img class="size-full wp-image-728" alt="wp-composer" src="http://wp.seanfisher.co/wp-content/uploads/2013/06/banner-772x250-1.png" width="772" height="250" /> WordPress meet Composer.
 
 Recently, I've been working with a lot of different PHP frameworks. Learning from some of the most annoying parts (I'm looking at you Drupal) and some of the best (oh yeah, go Laravel and Symfony!), I always wish some of those good things were including in good-ole&nbsp;<a href="http://wordpress.org/">WordPress</a>. Maybe a man can dream. But I'd love to see some more things happen.
 

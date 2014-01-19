@@ -3,12 +3,6 @@ layout: post
 status: publish
 published: true
 title: Lockdown WP Admin
-author: seanfisher
-author_login: seanfisher
-author_email: hi@seanfisher.co
-wordpress_id: 810
-wordpress_url: http://seanfisher.co/?page_id=810
-date: 2013-12-10 23:58:54.000000000 -05:00
 categories: []
 tags: []
 ---
