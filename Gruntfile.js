@@ -2,12 +2,7 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         // The clean task ensures the parsed css is removed
-        clean: ["_site/css/", "css"],
-
-        // Compress generated css files
-        cssmin: {
-                "css/screen.css": ["css/screen.css"]
-        },
+        clean: ["_site/assets/", "assets"],
 
         // Automatically run a task when a file changes
         watch: {
@@ -30,17 +25,26 @@ module.exports = function (grunt) {
             }
         },
 
+        // Compress generated css files
+        cssmin: {
+                "assets/screen.min.css": [
+                  "bower_components/bootstrap/dist/css/bootstrap.css",
+                  "css/screen.css"
+                ]
+        },
+
         // Add shell tasks
         shell: {
             copyCss: {
-                command: "cp css/screen.css _site/css/screen.css"
+                command: "cp assets/screen.min.css _site/assets/screen.min.css"
             }
         },
 
         uglify: {
           site: {
             files: {
-              'js/site.min.js': [
+              'assets/site.min.js': [
+                'bower_components/modernizr/modernizr.js',
                 'bower_components/jquery/jquery.js',
                 'bower_components/bootstrap/js/transition.js',
                 'bower_components/bootstrap/js/tooltip.js',
