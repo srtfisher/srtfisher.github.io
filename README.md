@@ -11,7 +11,7 @@ Everything else is MIT, fair gaim. Use it up.
 ### Installing and Building
 To build the site, run this:
 
-```shell
+```bash
 bower install # assumes you installed bower
 
 grunt build # assumes you installed grunt
