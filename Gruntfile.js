@@ -37,6 +37,14 @@ module.exports = function (grunt) {
         shell: {
             copyCss: {
                 command: "cp assets/screen.min.css _site/assets/screen.min.css"
+            },
+
+            build: {
+              command: "jekyll build"
+            },
+
+            serve: {
+              command: "jekyll serve --watch"
             }
         },
 
