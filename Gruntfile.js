@@ -39,6 +39,10 @@ module.exports = function (grunt) {
                 command: "cp assets/screen.min.css _site/assets/screen.min.css"
             },
 
+            copyJs: {
+                command: "cp assets/site.min.js _site/assets/site.min.js"
+            },
+
             build: {
               command: "jekyll build"
             },

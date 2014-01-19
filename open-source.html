@@ -1,0 +1,44 @@
+---
+layout: default
+title: Open Source Projects | Sean Fisher
+permalink: open-source/
+---
+
+<section class="focus-area super-dark">
+  <div class="container">
+    <h2 class="leading">Open Source Projects</h2>
+    <p class="leading">Complete listing can be found on <a href="http://github.com/srtfisher" target="_blank" rel="self">GitHub</a></p>
+  </div>
+</section>
+
+<div class="container">
+  <section id="project-listing" class="row">
+  {% for project in site.data.projects %}
+    <a href="{{ project.url }}" target="_blank">
+      <div class=" col-lg-6 col-md-6 col-sm-6">
+        <div class="project">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+  </section>
+</div>
+
+<div class="container">
+  <section class="single-work">
+    <div class="footer-container open-source">
+          <div class="row">
+              <div class="col-lg-7 col-md-7 col-sm-7">
+                  <h3>Like what you're seeing?</h3>
+                  <p class="lead">I enjoy building amazing products and I would love to work with you.</p>
+              </div>
+              
+              <div class="col-lg-4 col-md-4 col-sm-4 col-lg-push-1 col-md-push-1 col-sm-push-1">
+                  <a class="btn btn-primary btn-large" href="{{ site.baseurl }}contact/?utm_source=seanfisherco&utm_medium=cta-button&utm_content=open-source-start-project&utm_campaign=contact&project">Start Your Project</a>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>

@@ -596,6 +596,8 @@ section.blog article .page-cta .page-cta-footer p {
 section.blog article .page-cta .page-cta-footer .btn {
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   border-bottom-width: 3px;
+  color: white;
+  text-decoration: none;
 }
 section.blog article .content-wrap {
   margin-top: 20px;
