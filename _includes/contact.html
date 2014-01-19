@@ -1,28 +1,28 @@
 <section class="contact" id="contact">
   <div class="container">
-    <?php if (! SINGLE_PAGE) : ?>
+    {% if {{include.single}} != 'true' %}
     <h3 class="section-title">Let's get in touch.</h3>
     <h4 class="section-sub">We should be in touch. Shoot Sean an email below and he'll get back to you within <strong class="tipsy" title="That is, of course, if I'm not away on a much needed vacation!">one day</strong>.</h4>
-    <?php endif; ?>
+    {% endif %}
 
     <div class="alt-btns row">
       <div class="col-lg-3 col-md-3 col-sm-4 left col-lg-push-3 col-md-push-3 col-sm-push-2">
         <p>Want to chat with me?</p>
-        <a href="#" data-type="message" class="btn btn-flat btn-<?php echo (MESSAGE_TYPE == 'message') ? 'primary' : 'default'; ?> btn-lg btn-block">Send a Message</a>
+        <a href="#" data-type="message" class="btn btn-flat btn-{% if include.type != 'project' %}primary{% else %}default{% endif %} btn-lg btn-block">Send a Message</a>
       </div>
 
       <div class="col-lg-3 col-md-3 col-sm-4 col-lg-push-3 col-md-push-3 col-sm-push-2">
         <p>Want to work with me?</p>
-        <a href="#" data-type="project" class="btn btn-flat btn-<?php echo (MESSAGE_TYPE == 'project') ? 'primary' : 'default'; ?> btn-lg btn-block">Start a Project</a>
+        <a href="#" data-type="project" class="btn btn-flat btn-{% if include.type == 'project' %}primary{% else %}default{% endif %} btn-lg btn-block">Start a Project</a>
       </div>
     </div>
 
     <div class="row">
-      <form action="<?php echo home_url('contact'); ?>" method="POST" class="contact-form" data-form-type="message" enctype="multipart/form-data" <?php if (MESSAGE_TYPE !=='message' ) echo 'style="display:none;"'; ?>>
+      <form action="{{ site.baseurl }}contact" method="POST" class="contact-form" data-form-type="message" enctype="multipart/form-data" {% if include.type == 'project' %} style="display:none;" {% endif %}>
         <input type="hidden" name="type" value="message" />
 
         <div class="col-lg-6 col-md-6">
-          <textarea name="content" id="contact-textarea" <?php if (SINGLE_PAGE AND MESSAGE_TYPE=='message' ) echo 'autofocus'; ?>placeholder="What's on your mind?" class="form-control"></textarea>
+          <textarea name="content" id="contact-textarea" autofocus placeholder="What's on your mind?" class="form-control"></textarea>
         </div>
 
         <div class="col-lg-6 col-md-6">
@@ -41,22 +41,20 @@
       </form>
     </div>
 
-    <form action="<?php echo home_url('contact'); ?>" method="POST" class="contact-form" data-form-type="project" enctype="multipart/form-data" <?php if (MESSAGE_TYPE !=='project' ) echo 'style="display:none;"'; ?>>
+    <form action="{{ site.baseurl }}contact" method="POST" class="contact-form" data-form-type="project" enctype="multipart/form-data" {% if include.type != 'project' %} style="display:none;" {% endif %}>
       <input type="hidden" name="type" value="project" />
       <input type="hidden" name="is-robot" id="is-robot" value="yes" />
 
       <div class="row">
         <div class="col-lg-8 col-md-8 col-sm-8 col-lg-push-2 col-md-push-2 col-sm-push-2" class="project-messages">
 
-          <?php if (date( 'Y') <=2 014 AND date( 'n') <=3 ) : ?>
           <div class="contact-alert" style="width:80%;">
             I'm currently accepting work for Spring 2014 — would love to hear from you.
           </div>
-          <?php endif; ?>
 
           <div class="form-group">
             <label for="your-name">Your Name</label>
-            <input required type="text" name="your-name" id="your-name" placeholder="What's your name?" class="form-control name" <?php if (defined( 'SINGLE_PAGE') AND MESSAGE_TYPE=='project' ) echo 'autofocus'; ?>/>
+            <input required type="text" name="your-name" id="your-name" placeholder="What's your name?" autofocus class="form-control name" />
           </div>
 
           <div class="form-group">
@@ -108,8 +106,8 @@
       <h4 class="leading">Your message has been sent &mdash; stay tuned!</h4>
     </div>
 
-    <?php if (! defined( 'SINGLE_PAGE')) : ?>
+    {% if {{include.single}} != 'true' %}
     <h4 class="section-sub alt-contact">Don't prefer E Mail? I'd love to hear from you &mdash; Call me at <strong>(347) 855-7326</strong> or Skype me at <a href="skype:srtfisher?add">srtfisher</a></h4>
-    <?php endif; ?>
+    {% endif %}
   </div>
 </section>
