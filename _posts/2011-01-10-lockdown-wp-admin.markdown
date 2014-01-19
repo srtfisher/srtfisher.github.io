@@ -8,6 +8,7 @@ tags: []
 ---
 
 {% include post-cta.html %}
+
 <p style="text-align: left;">WordPress security is often very strong straight out of the box. Though many may say that open-source software is insecure, I beg to differ. Within hours of realizing a security breach in the code, WordPress and mostly <a href="http://twitter.com/nacin">@nacin</a> had updated the code and pushed a security update. That's hours, not days like the big corporate companies (cough Adobe).</p>
 Nevertheless, I love to make it even <em>more </em>secure. And I think I have done that. Introducing <a href="http://wordpress.org/extend/plugins/lockdown-wp-admin/" target="_blank">Lockdown WP Admin</a>. It is a neat plugin to help you <em>lock down</em> WordPress's admin interface.
 

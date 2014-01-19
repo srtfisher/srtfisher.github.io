@@ -732,19 +732,22 @@ section.blog article .content-wrap:after {
   border-top: 1px solid #D8D8D8;
 }
 .wp-pagenavi-wrap .wp-pagenavi {
-  width: 50%;
+  width: 80%;
+  max-width: 500px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
 }
 .wp-pagenavi-wrap .wp-pagenavi a,
 .wp-pagenavi-wrap .wp-pagenavi span {
-  display: inline-block;
+  display: table-cell;
+  width: 1%;
   padding: 12px 15px;
   font-size: 15px;
   position: relative;
   top: -1px;
   color: #555;
+  text-align: center;
 }
 .wp-pagenavi-wrap .wp-pagenavi a.current,
 .wp-pagenavi-wrap .wp-pagenavi span.current,

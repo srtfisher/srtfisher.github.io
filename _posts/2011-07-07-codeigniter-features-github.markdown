@@ -13,4 +13,4 @@ categories:
 - News
 tags: []
 ---
-I just&nbsp;open sourced&nbsp;a quick and dirty way to have feature flags on Codeigniter. Take a look!&nbsp;<a href="https://github.com/talkingwithsean/Codeigniter-Features">talkingwithsean/Codeigniter-Features - GitHub</a>.
+I just&nbsp;open sourced&nbsp;a quick and dirty way to have feature flags on Codeigniter. Take a look!&nbsp;<a href="https://github.com/srtfisher/Codeigniter-Features">srtfisher/Codeigniter-Features - GitHub</a>.

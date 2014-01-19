@@ -124,18 +124,20 @@ section.blog {
     border-top: 1px solid #D8D8D8;
 
     .wp-pagenavi {
-        width:50%;
+        width: 80%;
+        max-width: 500px;
         margin: 0 auto;
         font-family: @fontsans;
         text-align: justify;
 
         a, span {
-            display: inline-block;
+            display: table-cell;width: 1%;
             padding: 12px 15px;
             font-size: 15px;
             position: relative;
             top: -1px;
             color: #555;
+            text-align: center;
 
             &.current, &:hover {
                 border-top: 1px solid darken(#d8d8d8, 30%);

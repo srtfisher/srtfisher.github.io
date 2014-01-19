@@ -14,5 +14,7 @@ root_desc: "Sean Fisher"
 rdiscount:
   extensions: []
 
+paginate: 10
+paginate_path: blog/:num
 
-exclude: ['README', 'Gruntfile.js']
+exclude: ['README', 'Gruntfile.js', 'less']

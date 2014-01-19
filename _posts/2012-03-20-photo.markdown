@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: ! 'Photo:'
+title: Tranqulity
 author: seanfisher
 author_login: seanfisher
 author_email: hi@seanfisher.co
@@ -15,4 +15,4 @@ tags:
 - instagram
 - life
 ---
-<img src='http://distilleryimage10.instagram.com/f501e8d072db11e1989612313815112c_7.jpg' style='max-width:600px;' /><br /><div>via Instagram http://instagr.am/p/IaTaUNMlKK/</div>
+<img src='http://distilleryimage10.instagram.com/f501e8d072db11e1989612313815112c_7.jpg' style='max-width: 100%;' />
