@@ -1,0 +1,29 @@
+- name: Appcelerator Inc.
+  domain: appcelerator.com
+  url: work/appcelerator-inc/
+  img: /img/work/appcelerator-sm.jpg
+
+- name: Teens in Tech Labs
+  domain: teensintech.com
+  url: work/teens-in-tech-labs/
+  img: /img/work/teensintech-sm.jpg
+
+- name: TruantToday
+  domain: truanttoday.com
+  url: work/truanttoday/
+  img: /img/work/truanttoday-sm.jpg
+
+- name: TruantToday “Textbook”
+  url: work/truanttoday-textbook/
+  domain: truanttoday.com
+  img: /img/work/truanttoday-textbook-sm.jpg
+
+- name: About Teens in Tech Labs
+  url: work/about-teens-in-tech-labs/
+  domain: teensintech.com
+  img: /img/work/about-teensintech.jpg
+
+- name: Teens in Tech Conference
+  domain: teensintech.com
+  url: work/teens-in-tech-conference/
+  img: /img/work/teensintech-conf.jpg

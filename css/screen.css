@@ -224,8 +224,11 @@ section.about-panels .row .panel-media img {
 section.portfolio-listing {
   padding-top: 20px;
 }
-section.portfolio-listing .row {
+section.portfolio-listing .work-piece {
   margin-bottom: 20px;
+}
+section.portfolio-listing img {
+  -webkit-filter: grayscale(0);
 }
 section.portfolio-listing a:hover {
   text-decoration: none;
