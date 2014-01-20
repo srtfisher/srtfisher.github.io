@@ -20,7 +20,11 @@ p {
 h1, h2, h3 {
      font-weight: 500;
      margin: 15px 0;
-     font-family: @fontsans;
+     font-family: @fontsansalt;
+     font-weight: 600;
+}
+h4, h5, h6 {
+  font-family: @fontsans;
 }
 
 @bigHeaderFont: 30px;
@@ -39,19 +43,16 @@ h2 {
 h3 {
      font-size: @bigHeaderFont - (@headerFontDecrease * 2);
      line-height: @bigHeaderFont - (@headerFontDecrease * 2) + 1;
-     font-weight: normal;
 }
 
 h4 {
      font-size: @bigHeaderFont - (@headerFontDecrease * 3);
      line-height: @bigHeaderFont - (@headerFontDecrease * 3) + 1;
-     font-family: @fontsans;
 }
 
 h5 {
      font-size: @bigHeaderFont - (@headerFontDecrease * 4);
      line-height: @bigHeaderFont - (@headerFontDecrease * 4) + 1;
-     font-family: @fontsans;
 }
 
 h6 {
@@ -59,7 +60,6 @@ h6 {
      line-height: @bigHeaderFont - (@headerFontDecrease * 5) + 1;
      text-transform: uppercase;
      font-weight: 600;
-     font-family: @fontsans;
 }
 
 a {
@@ -77,9 +77,14 @@ img {
 }
 
 blockquote {
-     padding: 10px 0 10px 30px;
-
+     padding: 0;
+     margin: 60px 10px;
+     width: 100%;
+     font: 600 24px/38px @fontsans;
+     border-left: none;
      p {
+      padding: 0;
+        font: inherit;
           margin: 0;
      }
 

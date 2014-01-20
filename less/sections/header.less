@@ -14,7 +14,7 @@ body.darker-header #global-nav {
     top:0;
     width: 100%;
     z-index: 600;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: none;//1px solid rgba(0,0,0,0.1);
     .box-shadow (0 -6px 20px rgba(0,0,0,0.2));
     
     .site-logo {
@@ -39,6 +39,20 @@ body.darker-header #global-nav {
                 .nav-a-active ();
             }
         }
+    }
+
+    .navbar-toggle {
+      border: none;
+
+      &:focus, &:active {
+        outline: none;
+        box-shadow: none;
+        background: white;
+      }
+      span.icon-bar {
+        height: 3px;
+        background-color: rgba(0, 0, 0, 0.63);
+      }
     }
 }
 

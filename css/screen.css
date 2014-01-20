@@ -7,6 +7,14 @@ body a {
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
+body p {
+  font-family: 'Open Sans', sans-serif;
+}
+body h1,
+body h2,
+body h3 {
+  font-family: 'Raleway', sans-serif;
+}
 .content-wrap {
   background: white;
 }
@@ -89,7 +97,6 @@ section.focus-area .action-btns .btn {
   padding: 12px 25px;
   font-size: 20px;
   line-height: 30px;
-  font-family: 'Open Sans', sans-serif;
   border-width: 3px;
 }
 section.focus-area .action-btns .btn.btn-default {
@@ -102,9 +109,7 @@ section.focus-area .action-btns .btn.btn-default:hover {
 }
 h2.leading {
   text-align: center;
-  font-weight: 400;
-  font-size: 43px;
-  line-height: 58px;
+  font: 400 42px/57px 'Raleway', sans-serif;
   letter-spacing: -1px;
   color: #333;
   margin-bottom: 20px;
@@ -157,7 +162,7 @@ body.darker-header #global-nav {
   top: 0;
   width: 100%;
   z-index: 600;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none;
   -webkit-box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2);
 }
@@ -181,6 +186,19 @@ body.darker-header #global-nav {
   font-weight: bold;
   background: none;
 }
+#global-nav .navbar-toggle {
+  border: none;
+}
+#global-nav .navbar-toggle:focus,
+#global-nav .navbar-toggle:active {
+  outline: none;
+  box-shadow: none;
+  background: white;
+}
+#global-nav .navbar-toggle span.icon-bar {
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.63);
+}
 body.blog ul.nav #nav-blog a {
   color: black;
   font-weight: bold;
@@ -201,6 +219,9 @@ section.about-grey .about-panel img.large-focus {
 section.about-grey .about-panel .panel-wrap {
   -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+section.about-grey .about-panel h3.leading {
+  font-family: 'Raleway', sans-serif;
 }
 section.about-grey .about-panel .inner {
   background: white;
@@ -489,6 +510,9 @@ section.single-work div.footer-container .btn.btn-primary:hover {
   display: block;
   padding: 5px 10px;
 }
+#global-footer .copyright {
+  text-align: right;
+}
 section.blog {
   background: white;
   padding-top: 100px;
@@ -627,6 +651,12 @@ section.blog article .content-wrap h2,
 section.blog article .content-wrap h3 {
   font-weight: 500;
   margin: 15px 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+section.blog article .content-wrap h4,
+section.blog article .content-wrap h5,
+section.blog article .content-wrap h6 {
   font-family: 'Open Sans', sans-serif;
 }
 section.blog article .content-wrap h1 {
@@ -640,24 +670,20 @@ section.blog article .content-wrap h2 {
 section.blog article .content-wrap h3 {
   font-size: 24px;
   line-height: 25px;
-  font-weight: normal;
 }
 section.blog article .content-wrap h4 {
   font-size: 21px;
   line-height: 22px;
-  font-family: 'Open Sans', sans-serif;
 }
 section.blog article .content-wrap h5 {
   font-size: 18px;
   line-height: 19px;
-  font-family: 'Open Sans', sans-serif;
 }
 section.blog article .content-wrap h6 {
   font-size: 15px;
   line-height: 16px;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
 }
 section.blog article .content-wrap a {
   color: #0071BA;
@@ -671,9 +697,15 @@ section.blog article .content-wrap img {
   max-width: 100%;
 }
 section.blog article .content-wrap blockquote {
-  padding: 10px 0 10px 30px;
+  padding: 0;
+  margin: 60px 10px;
+  width: 100%;
+  font: 600 24px/38px 'Open Sans', sans-serif;
+  border-left: none;
 }
 section.blog article .content-wrap blockquote p {
+  padding: 0;
+  font: inherit;
   margin: 0;
 }
 section.blog article .content-wrap blockquote cite {
@@ -870,6 +902,17 @@ section.solutions-process .solution-item p {
   section.focus-area.home {
     padding: 75px 0 50px;
   }
+  section.focus-area.home p.leading {
+    width: 100%;
+    font-size: 18px;
+  }
+  section.focus-area.home p.leading strong {
+    display: block;
+    margin-top: 10px;
+  }
+  section.focus-area.home .action-btns {
+    margin-top: 15px;
+  }
   section.focus-area .action-btns .btn {
     display: block;
     width: 100%;
@@ -880,6 +923,20 @@ section.solutions-process .solution-item p {
   }
   section.focus-area.portfolio-listing .work-piece:first-child {
     margin-bottom: 20px;
+  }
+  .solutions-process h2.leading,
+  .solutions-feature h2.leading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .solutions-process h3.leading,
+  .solutions-feature h3.leading {
+    line-height: 40px;
+  }
+  .solutions-process h4,
+  .solutions-feature h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
   }
   section.about-grey {
     padding-top: 100px;
@@ -897,10 +954,15 @@ section.solutions-process .solution-item p {
     width: auto;
   }
   section.blog div.container article {
-    padding: 0 15px;
+    padding: 0 7px;
+  }
+  section.blog div.container .content-wrap p {
+    font-size: 17px;
+    line-height: 1.9;
   }
   section.blog div.container .content-wrap img {
     max-width: 100%;
+    height: auto;
   }
   section.contact form {
     width: auto;
@@ -942,6 +1004,21 @@ section.solutions-process .solution-item p {
   }
   #global-nav .site-logo img {
     height: 50px;
+  }
+  .site-logo {
+    margin-left: -15px;
+  }
+  #global-footer ul {
+    margin-bottom: 10px;
+  }
+  #global-footer ul li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+    text-align: center;
+  }
+  #global-footer .copyright {
+    text-align: center;
   }
   #project-listing .project {
     overflow: visible !important;
