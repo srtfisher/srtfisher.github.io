@@ -11,7 +11,7 @@ SF.home = function() {
         scrollToId('#contact');
         $('#contact-textarea').focus();
         
-        _gaq.push(['_trackEvent', 'Button', 'Click', 'Contact '  + $(this).data('medium')]);
+        ga('send', 'event', 'Button', 'Click', 'Contact '  + $(this).data('medium'));
     });
 
     $('#nav-work a').click(function(e)
@@ -74,7 +74,7 @@ $(document).ready(function () {
                 $('form.contact-form').slideUp();
                 $('#contact-sent').fadeIn();
 
-                _gaq.push(['_trackEvent', 'ContactFrom', 'Submit', email]);
+                ga('send', 'event', 'ContactFrom', 'Submit', email);
             }
             else
             {
