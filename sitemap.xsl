@@ -64,8 +64,6 @@ layout: nil
 				<div id="intro">
 					<p>
 						This is a XML Sitemap which is supposed to be processed by search engines like <a href="http://www.google.com">Google</a>, <a href="http://search.msn.com">MSN Search</a> and <a href="http://www.yahoo.com">YAHOO</a>.<br />
-						It was generated using the Blogging-Software <a href="http://wordpress.org/">WordPress</a> and the <a href="http://www.arnebrachhold.de/redir/sitemap-home/" title="Google Sitemap Generator Plugin for WordPress">Google Sitemap Generator Plugin</a> by <a href="http://www.arnebrachhold.de/">Arne Brachhold</a>.<br />
-						You can find more information about XML sitemaps on <a href="http://sitemaps.org">sitemaps.org</a> and Google's <a href="http://code.google.com/sm_thirdparty.html">list of sitemap programs</a>.
 					</p>
 				</div>
 				<div id="content">
@@ -104,9 +102,7 @@ layout: nil
 						</xsl:for-each>
 					</table>
 				</div>
-				<div id="footer">
-					Generated with <a href="http://www.arnebrachhold.de/redir/sitemap-home/" title="Google Sitemap Generator Plugin for WordPress">Google Sitemap Generator Plugin for WordPress</a> by <a href="http://www.arnebrachhold.de/">Arne Brachhold</a>. This XSLT template is released under GPL.
-				</div>
+			
 			</body>
 		</html>
 	</xsl:template>
