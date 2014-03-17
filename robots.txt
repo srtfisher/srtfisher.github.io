@@ -1,2 +1,6 @@
+---
+layout: nil
+permalink: robots.txt
+---
 # Hi Robots
 Allow: *
