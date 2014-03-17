@@ -3,4 +3,5 @@ layout: nil
 permalink: robots.txt
 ---
 # Hi Robots
-Allow: *
+
+Sitemap: http://seanfisher.co/sitemap.xml
