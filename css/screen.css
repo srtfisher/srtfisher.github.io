@@ -693,6 +693,12 @@ section.blog article .content-wrap a:hover {
   color: #005287;
   text-decoration: none;
 }
+section.blog article .content-wrap hr {
+  width: 80%;
+  border-top-width: 3px;
+  margin: 60px auto;
+  border-top-color: whitesmoke;
+}
 section.blog article .content-wrap img {
   max-width: 100%;
 }

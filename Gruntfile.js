@@ -48,7 +48,7 @@ module.exports = function (grunt) {
             },
 
             serve: {
-              command: "jekyll serve --watch"
+              command: "jekyll serve --watch --drafts"
             }
         },
 
