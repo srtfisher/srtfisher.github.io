@@ -1,3 +1,8 @@
+- name: Date Night Is...
+  domain: datenight.is
+  url: work/datenightis/
+  img: /img/work/datenight-sm.jpg
+
 - name: Appcelerator Inc.
   domain: appcelerator.com
   url: work/appcelerator-inc/
