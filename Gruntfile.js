@@ -49,6 +49,10 @@ module.exports = function (grunt) {
 
             serve: {
               command: "jekyll serve --watch --drafts"
+            },
+
+            buildpdf: {
+              command: "./bin/md2resume pdf _includes/resume.md ./ --template=modern"
             }
         },
 
@@ -93,11 +97,12 @@ module.exports = function (grunt) {
     // The default task will show the usage
     grunt.registerTask("default", "Prints usage", function () {
         grunt.log.writeln("");
-        grunt.log.writeln("Product site development");
+        grunt.log.writeln("Seanfisher.co Development");
         grunt.log.writeln("------------------------");
         grunt.log.writeln("");
         grunt.log.writeln("* run 'grunt --help' to get an overview of all commands.");
         grunt.log.writeln("* run 'grunt dev' to start developing.");
+        grunt.log.writeln("* run `shell:buildpdf` to build the PDF resume");
     });
 
     // The dev task will be used during development

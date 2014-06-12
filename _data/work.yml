@@ -18,11 +18,6 @@
   url: work/truanttoday/
   img: /img/work/truanttoday-sm.jpg
 
-- name: TruantToday “Textbook”
-  url: work/truanttoday-textbook/
-  domain: truanttoday.com
-  img: /img/work/truanttoday-textbook-sm.jpg
-
 - name: About Teens in Tech Labs
   url: work/about-teens-in-tech-labs/
   domain: teensintech.com

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Sean Fisher | Software Engineer, Entrepreneur</title>
+<style type="text/css">
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+p,
+pre {
+  margin: 1em 0;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body.pdf {
+  color: black;
+}
+body.pdf a {
+  text-decoration: none;
+  color: black;
+}
+body.pdf .container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  border: none;
+  border-width: 8px 0 2px 0;
+  text-align: left;
+}
+body.pdf .resume {
+  position: relative;
+  padding: 40px 80px;
+}
+body.pdf a[href$='.pdf'] {
+  display: none;
+}
+body.pdf h1 {
+  letter-spacing: 0;
+  margin-top: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+body.pdf h2 {
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: normal;
+}
+body.pdf h3 {
+  float: left;
+  width: 16%;
+  font-style: normal;
+}
+body.pdf h3+p {
+  float: left;
+  width: 84%;
+}
+body.pdf blockquote {
+  top: 40px;
+  right: 50px;
+  position: absolute;
+}
+body.pdf ul li {
+  width: 28%;
+  float: left;
+}
+body.pdf ul dl {
+  margin: 0;
+  padding: 0.3em 0 0;
+}
+body.pdf ul dl dt {
+  font-size: 122%;
+  font-weight: normal;
+  margin: 0 0 .75em;
+}
+body.pdf ul dl dd {
+  padding: 0 4em 0 0;
+}
+body.pdf ol {
+  float: left;
+  width: 84%;
+  margin: .7em 0 0;
+}
+body.pdf ol li {
+  width: 33%;
+  margin: 0;
+}
+body.pdf ol li:nth-child(3n) {
+  width: 34%;
+}
+body.pdf ol li:nth-child(1),
+body.pdf ol li:nth-child(2),
+body.pdf ol li:nth-child(3) {
+  border-top: none;
+}
+body.pdf dl {
+  margin: .7em 0 0;
+  page-break-inside: avoid !important;
+  display: block;
+  width: 84%;
+  float: left;
+}
+body.pdf dl strong {
+  float: right;
+  margin-top: -2em;
+}
+body.pdf dl em {
+  font-size: 130%;
+  font-style: normal;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+body {
+  font-family: 'Hoefler Text', Times New Roman, Times, serif;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+ul dl dt {
+  font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  background: whiteSmoke;
+  border: solid #666;
+  border-width: 8px 0 2px 0;
+  text-align: left;
+}
+.resume {
+  position: relative;
+  padding: 10px 20px;
+}
+a {
+  color: #990003;
+}
+a[href$='.pdf'] {
+  display: inline-block;
+  background: #666;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+blockquote {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+}
+hr {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 18px auto;
+  width: 100%;
+  clear: both;
+  border: none;
+  border-top: 1px solid #CCC;
+  font-size: 1px;
+  line-height: 0;
+  overflow: visible;
+  page-break-after: avoid;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+h3 {
+  margin: 0;
+  padding: 0 0 .5em;
+  font-size: 150%;
+  font-style: italic;
+  font-weight: normal;
+}
+h3+p {
+  margin: .6em 0 16px;
+  padding: 0;
+  display: block;
+  font-size: 104%;
+  line-height: 24px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+ul dl {
+  margin: .3em 0 0;
+  padding: 0;
+  width: 100%;
+}
+ul dl dt {
+  font-size: 100%;
+}
+ul dl dd {
+  margin: 0 0 1em;
+  padding: 0 2em 0 0;
+  font-size: .8em;
+  line-height: 1.5em;
+}
+ol {
+  margin: 0;
+  padding: 0 0 .75em;
+  width: 84%;
+  display: inline-block;
+}
+ol li {
+  margin: 0 0 0 1em;
+  padding: 0;
+  border-top: 1px solid #CCCCCC;
+  width: 100%;
+  float: left;
+  list-style: none;
+  line-height: 24px;
+  font-size: 14px;
+}
+ol li:nth-child(1) {
+  border-top: none;
+}
+dl {
+  display: inline-block;
+  width: 75%;
+  margin: 0;
+  padding: 0;
+}
+dl dt {
+  margin: 0;
+  padding: 0;
+  font-size: 140%;
+}
+dl dd {
+  margin: 0 0 1.5em;
+  padding: 0;
+  font-size: 80%;
+  line-height: 1.4em;
+}
+dl strong {
+  display: block;
+}
+dl em {
+  display: block;
+  font-size: 110%;
+  margin: .15em 0 .5em;
+  font-style: bold;
+}
+#footer {
+  display: none;
+}
+#footer + p {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (min-width: 37.5em) {
+  body {
+    padding: 2em 0;
+  }
+  blockquote {
+    top: 10px;
+    right: 50px;
+    position: absolute;
+  }
+  h1 {
+    margin-top: .5em;
+  }
+  ol {
+    margin: 0 0 0 1em;
+  }
+  ol li {
+    width: 50%;
+    margin: 0;
+  }
+  ol li:nth-child(1),
+  ol li:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 57em) {
+  .container {
+    width: 912px;
+  }
+  .resume {
+    position: relative;
+    padding: 40px 50px;
+  }
+  blockquote {
+    top: 40px;
+    right: 50px;
+    position: absolute;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+  h3 {
+    float: left;
+    width: 16%;
+  }
+  h3+p {
+    float: left;
+    width: 84%;
+  }
+  ul li {
+    width: 28%;
+    float: left;
+  }
+  ul dl dt {
+    font-size: 122%;
+    font-weight: normal;
+    margin-bottom: .75em;
+  }
+  ul dl dd {
+    padding: 0 4em 0 0;
+  }
+  ol {
+    float: left;
+    width: 84%;
+    margin: .6em 0 0;
+  }
+  ol li {
+    width: 33%;
+    margin: 0;
+  }
+  ol li:nth-child(3n) {
+    width: 34%;
+  }
+  ol li:nth-child(1),
+  ol li:nth-child(2),
+  ol li:nth-child(3) {
+    border-top: none;
+  }
+  dl {
+    margin: .5em 0 0;
+  }
+  dl strong {
+    float: right;
+    margin-top: -2em;
+  }
+  dl em {
+    font-size: 130%;
+    font-style: normal;
+  }
+}
+
+</style>
+</head>
+
+<body class="">
+
+<div class="container">
+    <div class="resume">
+        <h1>Sean Fisher</h1>
+
+<h2>Software Engineer, Entrepreneur</h2>
+
+<blockquote>
+  <p>347.855.7326
+  hi@seanfisher.co
+  <a href="http://seanfisher.co/">seanfisher.co</a></p>
+</blockquote>
+
+<hr />
+
+<h3>Summary</h3>
+
+<p>An accomplished Software Engineer with heavy experience in a LAMP stack. Has experience building fast and efficient web applications and working collaboratively with a team in software engineering. Previous work experience includes working as a Chief Technology Officer for Truant Today, a startup that helps to keep students in the classroom and to curb truancy. Also worked as Head of Engineering for Teens in Tech Labs. Worked with various startups and clientele developing creating powerful web-based applications including Appcelerator Inc. and Anytime Experts, a online psychiatric evaluation application that provided therapy based upon a user’s symptoms. Extensive experience in developing and supporting open-source code. Proficient in oversight of an application from the code behind it to the software powering it. Eagle Scout with the Boy Scouts of America.</p>
+
+<hr />
+
+<h3>Experience</h3>
+
+<dl>
+<dt>TruantToday Inc.</dt>
+<dd>
+<p><em>Chief Technology Officer</em>
+<strong>August 2011 - January 2013</strong></p>
+
+<p>Chief Technology Officer for Truant Today, a startup that keeps students in the classroom. Developed the entire web application that allows teachers, school administrators, and other school officials to notify parents/guardians when a student is absent or when other important events have occurred regarding their student. This application works with other School Information Systems (SIS), such as Power Schools, to make the experience for teachers as simple as possible. TruantToday competed in the NBC Education Nation Innovation Challenge program in the fall of 2011. TruantToday came in second place, receiving fifteen thousand dollars in prize money. Also completed another small round of funding.</p>
+
+<p>In the spring of 2012, the TruantToday team participated in Microsoft’s Public Sector CIO Conference. Was featured as a prime example of “ed-tech” as well as an upcoming company using Microsoft’s technologies. Lead a team of engineers to work on the application, stepped back from oversight in the Summer of 2012.</p>
+</dd>
+
+<dt>Teens in Tech Labs</dt>
+<dd>
+<p><em>Head of Engineering</em>
+<strong>August 2010 - June 2013</strong></p>
+
+<p>Started as a developer and progressed to the Head of Engineering/CTO role. Worked to develop Connect, a product that allows for entrepreneurs to “connect” across the world. The application allowed users to work collaboratively and spark a conversation with others. Also developed a Teens in Tech Incubator program which is used as a tool to incubate and grow new startups. We worked with various heads of industry from large technology companies, such as Google and PayPal, to teach the young entrepreneurs the skills they need for success. In June 2011, a Teens in Tech Conference was held in Washington and was attended by business leaders as well as representatives from Congress and the White House. The annual conference was held in August of 2011 and 2012 that many attended and viewed online.</p>
+</dd>
+
+<dt>New Jersey Institute of Technology</dt>
+<dd>
+<p>*Researcher, CLASS Project
+<strong>Summer 2013</strong></p>
+
+<p>Worked on the Provost’s Summer Undergraduate Research Program that dealt with finding a more effective way of teaching students in a classroom. Instead of just learning from one source&#8212;that being the instructor, the CLASS method takes a different approach. By utilizing the shared knowledge pool of the classroom by asking questions and learning from one another, students become peer mentors utilizing self evaluation to make the classroom environment better.</p>
+
+<p>During the summer research program, a prototype was built to facilitate the development of the CLASS program for the instructors and the students. The prototype was user tested by instructors and students alike in preparation of a pilot program in the future. The future pilot program in college and high school classrooms will enable evidence that the CLASS project is an effective learning method.</p>
+</dd>
+</dl>
+
+<hr />
+
+<h3>Open Source Projects</h3>
+
+<dl>
+<dt>Projects</dt>
+<dd><em>Lockdown WP Admin</em>
+Built atop WordPress, hides and secures the administration interface from those who shouldn’t have access to it.</dd>
+
+<dd>
+<p><em>Drupal Web Consumer Module</em>
+A module that will allow developers to extend it and build on various APIs with ease.</p>
+</dd>
+
+<dd>
+<p><em>wp-composer</em>
+A dependency management tool for WordPress Core, Plugins and Themes.</p>
+</dd>
+
+<dd>
+<p><em>wp-rest-api</em>
+A RESTful API built for use over WordPress</p>
+</dd>
+
+<dd>
+<p><em>CodeIgniter Feature Library</em>
+Allow an application to use feature buckets to allow/disallow access to various features in their application</p>
+</dd>
+
+<dd>
+<p><em>CodeIgniter Remap</em>
+Transformed an older framework to use RESTful Controller Naming Conventions.</p>
+</dd>
+</dl>
+
+<hr />
+
+<h3>Skills</h3>
+
+<ul>
+<li><dl>
+<dt>Web Application Development​</dt>
+<dd>Worked to develop applications using a LAMP stack and other technologies including Redis, Memcache and MongoDB. By using unit tests, testing the application and building new features is simple and less problematic. Oversaw the development of applications from initial concept to applications receiving thousands of hits per day. Using A/B testing, determined which aspects of the application would provide more sales and were more effective overall.</dd>
+</dl></li>
+<li><dl>
+<dt>RESTful APIs​</dt>
+<dd>Experience includes building out a REST API as well as using REST APIs including Twilio, Clever, Twitter, Facebook (now deprecated) among others. Building an API is interesting in that you have to provide the data from your application to the consumer and still scale properly. While tuning the backend to better perform under load, we heavily cached data to help decrease the load on the MySQL Server.</dd>
+</dl></li>
+<li><dl>
+<dt>Framework and Test Driven Development​</dt>
+<dd>While building various applications, I have used various frameworks to help aid in the development. To name a few, some frameworks like CodeIgniter, Kohana, FuelPHP and Laravel were used. These frameworks provided methods to help rapidly build out the application as well as add new features later on. With the addition of new features, unit tests were essential and helped make development easier for the team as well as helping me sleep better at night.</dd>
+</dl></li>
+</ul>
+
+<hr />
+
+<h3>Contact</h3>
+
+<ul>
+<li><a href="http://seanfisher.co">Personal Website</a></li>
+<li>347.855.7326</li>
+<li><a href="m&#97;&#105;&#108;&#116;&#111;&#x3a;&#x68;&#x69;&#x40;&#x73;e&#97;&#110;&#102;&#105;&#115;&#x68;&#x65;&#x72;&#x2e;&#x63;o">&#x68;&#x69;&#x40;&#x73;e&#97;&#110;&#102;&#105;&#115;&#x68;&#x65;&#x72;&#x2e;&#x63;o</a></li>
+</ul>
+
+    </div>
+</div>
+
+</body>
+</html>

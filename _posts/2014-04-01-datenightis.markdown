@@ -29,5 +29,3 @@ For the first part of the project, I provided an MVP to get the project going wi
 ###Full Stack Development
 
 From the front to back, the application was written with modern development techniques to make sure that the application is fast, scalable and maintainable. Working with a number of moving parts in such a short period of time, getting it right was important to ensure a delightful user experience. 
-
-###Mobile First
