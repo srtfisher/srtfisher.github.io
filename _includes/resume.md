@@ -2,7 +2,7 @@
 ## Software Engineer, Entrepreneur
 
 > 347.855.7326
-> hi@seanfisher.co
+> <hi@seanfisher.co>
 > [seanfisher.co](http://seanfisher.co/)
 
 ------
