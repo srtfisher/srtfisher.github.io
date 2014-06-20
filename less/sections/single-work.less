@@ -21,18 +21,44 @@ section.single-work {
     }
     
     div.work-sidebar {
-        border-left: 1px solid #ddd;
-        padding-left: 22px;
+        padding-top: 30px;
+
+        h4 {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 13px;
+            font-weight: 700;
+        }
 
         p {
-            font-family: @fontsans;
+            font: normal 14px/25px @fontsans;
             margin: 1em 0;
             color: #474747;
-            font-size: 14px;
-            line-height: 25px;
 
             a {
               color: #222;
+            }
+        }
+
+        ul {
+            margin: 0.75em 0;
+            padding: 0 1em;
+            list-style: none;
+        }
+        li {
+            font: normal 14px/25px @fontsans;
+
+            &:before { 
+                content: "";
+                border-color: transparent #111;
+                border-style: solid;
+                border-width: 0.35em 0 0.35em 0.45em;
+                display: block;
+                height: 0;
+                width: 0;
+                left: -1em;
+                top: 17px;
+                position: relative;
             }
         }
     }
@@ -61,11 +87,9 @@ section.single-work {
         }
         
         p {
-            font-family: @fontsans;
+            font: normal 16px/27px @fontsans;
             margin: 1em 0;
-            color: #474747;
-            font-size: 16px;
-            line-height: 27px;
+            color: #666;
 
             a {
               color: darken(@brand-primary, 10%);

@@ -1,0 +1,55 @@
+---
+layout: post
+status: publish
+published: true
+title: Roadtrip 2014
+author: seanfisher
+author_login: seanfisher
+author_email: hi@seanfisher.co
+wordpress_id: 784
+wordpress_url: http://seanfisher.co/?p=784
+date: 2013-10-18 11:00:55.000000000 -04:00
+categories:
+- Roadtrip
+- Life
+- Travel
+tags:
+- thinking
+---
+
+For the last few years, the idea of an open road has [captivated me](https://twitter.com/srtfisher/status/450630127228321792) very much so. Going on an endless journey with no limit on where you can stop is my definition of excitement. being that I am from an urbanized area (NYC), the open road as well as the tranquility of being outside of the city has called my name.
+
+With the help of [Roadtrippers](https://roadtrippers.com/), I've been [planning out a roadtrip](https://roadtrippers.com/trips/summer-2014-overview/53318569225825ec780009ca) for the past two years.
+
+<a id="embed-53318569225825ec780009ca" href="https://roadtrippers.com/trips/53318569225825ec780009ca/share">Summer 2014 Overview | My new trip on Roadtrippers.com!</a><br>
+<script>!function(d,l,h,w,id){var a = d.getElementById(id);var ifr = d.createElement('iframe');ifr.src = l;ifr.height = h;ifr.width = w;a.parentNode.insertBefore(ifr, a);a.parentNode.removeChild(a);}(document,"https://roadtrippers.com/embedded/trips/53318569225825ec780009ca","500","790", "embed-53318569225825ec780009ca");</script>
+
+Along with [some](https://twitter.com/_Amandaamarie) [friends](https://twitter.com/IAMDanaGee), I'll be traveling to places that I've never been and seeing sights I've never seen. This is all quite exciting.
+
+The benefit of using Roadtrippers is that they also let you discover nearby attractions, sights and more right where you are driving. From a [model Flintstones city](https://roadtrippers.com/us/williams-az/camping-rv/flintstones-bedrock-city--2) to [ghosts towns](https://roadtrippers.com/us/yermo-ca/attractions/calico-ghost-town--2), it's looking to be a pretty exciting trip. I had to break it down into legs just to handle all the stops.
+
+<a id="embed-532cae84225825517400003a" href="https://roadtrippers.com/trips/532cae84225825517400003a/share">Summer Roadtrip Westbound Leg 1 | My new trip on Roadtrippers.com!</a><br>
+<script>!function(d,l,h,w,id){var a = d.getElementById(id);var ifr = d.createElement('iframe');ifr.src = l;ifr.height = h;ifr.width = w;a.parentNode.insertBefore(ifr, a);a.parentNode.removeChild(a);}(document,"https://roadtrippers.com/embedded/trips/532cae84225825517400003a","500","790", "embed-532cae84225825517400003a");</script>
+
+Big stops here include Washington DC, Nashville, St. Louis and Texas.
+
+<a id="embed-532cb137f79d518b7500007b" href="https://roadtrippers.com/trips/532cb137f79d518b7500007b/share">Summer Roadtrip Westbound Leg 2 | My new trip on Roadtrippers.com!</a><br>
+<script>!function(d,l,h,w,id){var a = d.getElementById(id);var ifr = d.createElement('iframe');ifr.src = l;ifr.height = h;ifr.width = w;a.parentNode.insertBefore(ifr, a);a.parentNode.removeChild(a);}(document,"https://roadtrippers.com/embedded/trips/532cb137f79d518b7500007b","500","790", "embed-532cb137f79d518b7500007b");</script>
+
+Continuing on with Route 66, includes stops at the Grand Canyon, Las Vegas, Los Angeles and up the coast of California to San Francisco.
+
+<a id="embed-532cb3c52b939f0fe1000197" href="https://roadtrippers.com/trips/532cb3c52b939f0fe1000197/share">Summer Roadtrip Eastbound Leg 1 | My new trip on Roadtrippers.com!</a><br>
+<script>!function(d,l,h,w,id){var a = d.getElementById(id);var ifr = d.createElement('iframe');ifr.src = l;ifr.height = h;ifr.width = w;a.parentNode.insertBefore(ifr, a);a.parentNode.removeChild(a);}(document,"https://roadtrippers.com/embedded/trips/532cb3c52b939f0fe1000197","500","790", "embed-532cb3c52b939f0fe1000197");</script>
+
+Heading back east, stops at Reno, Salt Lake City, Denver and Topeka are to be expected.
+
+<a id="embed-532cb505f79d517f4600002d" href="https://roadtrippers.com/trips/532cb505f79d517f4600002d/share">Summer Roadtrip Eastbound Leg 2 | My new trip on Roadtrippers.com!</a><br>
+<script>!function(d,l,h,w,id){var a = d.getElementById(id);var ifr = d.createElement('iframe');ifr.src = l;ifr.height = h;ifr.width = w;a.parentNode.insertBefore(ifr, a);a.parentNode.removeChild(a);}(document,"https://roadtrippers.com/embedded/trips/532cb505f79d517f4600002d","500","790", "embed-532cb505f79d517f4600002d");</script>
+
+The saddest part of the trip looks to include Des Moines, Chicago, Cleveland and Pittsburgh. After all that, it's home sweet home. The car will need a rest.
+
+----
+
+Hopefully this is a prelude of many posts to come sharing with the world the adventure that has yet to come. Warning: lots of photos and American culture.
+
+*Thank you to [Roadtrippers](https://roadtrippers.com/) for the help! #dreamroadtrip*

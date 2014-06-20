@@ -6,8 +6,8 @@ module.exports = function (grunt) {
 
         // Automatically run a task when a file changes
         watch: {
-            styles: {
-                files: ["less/*.less", "less/sections/*"],
+            all: {
+                files: ["less/*.less", "less/sections/*", "js/*"],
                 tasks: "build"
             }
         },
@@ -82,6 +82,15 @@ module.exports = function (grunt) {
               basePath: 'components/'
             }
           }
+        },
+
+        concurrent: {
+          server: {
+            tasks: ["watch:all", "shell:serve"],
+            options: {
+              logConcurrentOutput: true
+            }
+          }
         }
     });
 
@@ -93,6 +102,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-less");
     grunt.loadNpmTasks("grunt-bower");
     grunt.loadNpmTasks("grunt-shell");
+    grunt.loadNpmTasks('grunt-concurrent');
 
     // The default task will show the usage
     grunt.registerTask("default", "Prints usage", function () {
@@ -106,6 +116,6 @@ module.exports = function (grunt) {
     });
 
     // The dev task will be used during development
-    grunt.registerTask("dev", ["clean", "less:compile", "watch:styles"]);
+    grunt.registerTask("dev", ["build", "concurrent:server"]);
     grunt.registerTask("build", ["clean", "less:compile", "cssmin", "uglify"]);
 };
