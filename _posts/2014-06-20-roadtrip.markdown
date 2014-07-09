@@ -33,11 +33,11 @@ The benefit of using Roadtrippers is that they also let you discover nearby attr
 
 Big stops here include Washington DC, Nashville, St. Louis and Texas.
 
-<a id="embed-532cb137f79d518b7500007b" href="https://roadtrippers.com/trips/532cb137f79d518b7500007b/share">Summer Roadtrip Westbound Leg 2 | My new trip on Roadtrippers.com!</a><br>
-<script>!function(d,l,h,w,id){var a = d.getElementById(id);var ifr = d.createElement('iframe');ifr.src = l;ifr.height = h;ifr.width = w;a.parentNode.insertBefore(ifr, a);a.parentNode.removeChild(a);}(document,"https://roadtrippers.com/embedded/trips/532cb137f79d518b7500007b","500","790", "embed-532cb137f79d518b7500007b");</script>
-
 <a id="embed-53bc7e31fa2ffdc13a002a3f" href="https://roadtrippers.com/trips/53bc7e31fa2ffdc13a002a3f/share">Summer Roadtrip Westbound 2 | My new trip on Roadtrippers.com!</a><br>
 <script>!function(d,l,h,w,id){var a = d.getElementById(id);var ifr = d.createElement('iframe');ifr.src = l;ifr.height = h;ifr.width = w;a.parentNode.insertBefore(ifr, a);a.parentNode.removeChild(a);}(document,"https://roadtrippers.com/embedded/trips/53bc7e31fa2ffdc13a002a3f","500","790", "embed-53bc7e31fa2ffdc13a002a3f");</script>
+
+<a id="embed-532cb137f79d518b7500007b" href="https://roadtrippers.com/trips/532cb137f79d518b7500007b/share">Summer Roadtrip Westbound Leg 2 | My new trip on Roadtrippers.com!</a><br>
+<script>!function(d,l,h,w,id){var a = d.getElementById(id);var ifr = d.createElement('iframe');ifr.src = l;ifr.height = h;ifr.width = w;a.parentNode.insertBefore(ifr, a);a.parentNode.removeChild(a);}(document,"https://roadtrippers.com/embedded/trips/532cb137f79d518b7500007b","500","790", "embed-532cb137f79d518b7500007b");</script>
 
 Continuing on with Route 66, includes stops at the Grand Canyon, Las Vegas, Los Angeles and up the coast of California to San Francisco.
 
