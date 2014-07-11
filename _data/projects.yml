@@ -6,6 +6,10 @@
   url: https://github.com/srtfisher/wp-composer
   description: Interface to handle Composer depdencies inside of WordPress (via WP-CLI)
 
+- name: automatic
+  url: https://github.com/srtfisher/automatic
+  description: PHP 5.4+ Automatic API Library 
+
 - name: time-iterator
   url: https://github.com/srtfisher/time-iterator
   description: Time Iterator to request data for specific intervals of time.
