@@ -15,6 +15,24 @@ An accomplished Software Engineer with heavy experience in a LAMP stack. Has exp
 
 ### Experience
 
+ImageBrief
+: *Software Developer*
+__January 2014 - Present__
+
+  Inheriting a young startup code base, worked to develop and implement development procedures to scale the product team. Building new subscription and social campaign features as well as cleaning up legacy code and optimizing where needed. Transforming the original user facing side of the application into a structured base for building future product features with object oriented programming. Transformed the integration between the front-end and back-end to be dynamic and responsive. Rebuilt large portions of the website to ensure visibility and quality user experience across all devices.
+
+Date Night Is...
+: *Software Developer*
+__August 2013 - Present__
+
+  A complete rewrite and pivot of direction for the product. Developing the entire product to ensure a scalable and responsive end user experience. Pulling in from various providers and abstracting information from each. From there, building out a sorting algorithm to rank each entry with preference to business logic, knowledge about the user, relevancy to the location of the date and the recency to when it was added. After completion of project, reviewing the usage of the minimum viable product to see usage of the product and to tweak where needed as the project grew.
+
+Monimus
+: *Software Developer*
+__September 2013 - January 2014__
+
+  Implementing designs into an Angular.js based project. Building the initial stages of the process and ensuring a clean user experience for the various use cases of the product. The dynamic integration between backend and the frontend allowed the user to have a real-time interaction with other users of the web service.
+
 TruantToday Inc.
 : *Chief Technology Officer*
 __August 2011 - January 2013__
@@ -32,7 +50,6 @@ __August 2010 - June 2013__
 
 New Jersey Institute of Technology
 : *Researcher, CLASS Project*
-__Summer 2013__
 
   Worked on the Provost’s Summer Undergraduate Research Program that dealt with finding a more effective way of teaching students in a classroom. Instead of just learning from one source--that being the instructor, the CLASS method takes a different approach. By utilizing the shared knowledge pool of the classroom by asking questions and learning from one another, students become peer mentors utilizing self evaluation to make the classroom environment better.
 
@@ -54,6 +71,12 @@ Projects
 
 : *wp-rest-api*
   A RESTful API built for use over WordPress
+
+: *time-iterator*
+  Time Iterator to request data for specific intervals of time.
+
+: *automatic*
+  PHP 5.4+ Automatic.com API Library
 
 : *CodeIgniter Feature Library*
   Allow an application to use feature buckets to allow/disallow access to various features in their application
