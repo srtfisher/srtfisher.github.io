@@ -3,92 +3,97 @@
 **/
 var SF = {};
 SF.home = function() {
-    if (location.hash == '#work') scrollToId('#work');
+  if (location.hash == '#work') scrollToId('#work');
 
-    $('#nav-contact a, #spotlight-contact').click(function(e)
-    {
-        e.preventDefault();
-        scrollToId('#contact');
-        $('#contact-textarea').focus();
-        
-        ga('send', 'event', 'Button', 'Click', 'Contact '  + $(this).data('medium'));
-    });
+  $('#nav-contact a, #spotlight-contact').click(function(e)
+  {
+    e.preventDefault();
+    scrollToId('#contact');
+    $('#contact-textarea').focus();
 
-    $('#nav-work a').click(function(e)
-    {
-        e.preventDefault();
-        scrollToId('#work');
-    });
+    ga('send', 'event', 'Button', 'Click', 'Contact '  + $(this).data('medium'));
+  });
 
-    $('#nav-home a, #nav-logo a').click(function(e)
-    {
-        e.preventDefault();
-        scrollToId('body');
-    });
+  $('#nav-work a').click(function(e)
+  {
+    e.preventDefault();
+    scrollToId('#work');
+  });
+
+  $('#nav-home a, #nav-logo a').click(function(e)
+  {
+    e.preventDefault();
+    scrollToId('body');
+  });
 };
 
-$(document).ready(function () {
-    $('body').scrollTop(1);
+$(function() {
+  $('body').scrollTop(1);
 
-    $('#nav-toggle').click(function()
-    {
-        $('.nav-wrap').toggle();
-    });
+  $('#nav-toggle').click(function()
+  {
+      $('.nav-wrap').toggle();
+  });
 
-    $('.btn[data-type]').click(function(e)
-    {
-        e.preventDefault();
-        var type = $(this).data('type');
+  $('.btn[data-type]').click(function(e)
+  {
+      e.preventDefault();
+      var type = $(this).data('type');
 
-        onComplete = function() {
-            if (type == 'message')
-                $('#contact-textarea').focus();
-            else
-                $('#your-name').focus();
-        };
+      onComplete = function() {
+          if (type == 'message')
+              $('#contact-textarea').focus();
+          else
+              $('#your-name').focus();
+      };
 
-        $('form[data-form-type!="'+type+'"]').fadeOut(200);
-        $('.alt-btns .btn[data-type!="'+type+'"]').removeClass('btn-primary').addClass('btn-default');
+      $('form[data-form-type!="'+type+'"]').fadeOut(200);
+      $('.alt-btns .btn[data-type!="'+type+'"]').removeClass('btn-primary').addClass('btn-default');
 
-        $('form[data-form-type="'+type+'"]').fadeIn(400, onComplete);
-        $('.alt-btns .btn[data-type="'+type+'"]').removeClass('btn-default').addClass('btn-primary');
-    });
+      $('form[data-form-type="'+type+'"]').fadeIn(400, onComplete);
+      $('.alt-btns .btn[data-type="'+type+'"]').removeClass('btn-default').addClass('btn-primary');
+  });
 
-    $('form.contact-form').submit(function(e)
-    {
-        e.preventDefault();
-        btn = $(this).find('button.btn');
-        btn.button('loading');
+  $('form.contact-form').submit(function(e)
+  {
+      e.preventDefault();
+      btn = $(this).find('button.btn');
+      btn.button('loading');
 
-        $('#contact-error').hide();
-        $(this).find('input[name="is-robot"]').val('nope');
+      $('#contact-error').hide();
+      $(this).find('input[name="is-robot"]').val('no');
 
-        var Data = $(this).serialize(),
-            email = $(this).find('input[name="email"]').val();
+      var formData = $(this).serialize(),
+          email = $(this).find('input[name="email"]').val();
 
-        $.post('/contact/', Data, function(j)
-        {
-            if (j.status == 'ok')
-            {
-                $('.alt-btns').hide();
-                $('form.contact-form').slideUp();
-                $('#contact-sent').fadeIn();
+      $.ajax({
+        url: $(this).attr('action') + '?callback=?',
+        type: 'POST',
+        data: formData,
+        crossDomain: true
+      }).success(function(j) {
+        console.log(j);
+          if (j.status == 'ok')
+          {
+              $('.alt-btns').hide();
+              $('form.contact-form').slideUp();
+              $('#contact-sent').fadeIn();
 
-                ga('send', 'event', 'ContactFrom', 'Submit', email);
-            }
-            else
-            {
-                btn.button('reset');
-                $('#contact-error').fadeIn();
-            }
-        }, 'json');
-        
-        
-    });
-    
-    // Tooltip
-    $('.tipsy').tooltip();
-    $('#contact-btn').popover();
+              ga('send', 'event', 'ContactFrom', 'Submit', email);
+          }
+          else
+          {
+              btn.button('reset');
+              $('#contact-error').fadeIn();
+          }
+      });
+
+
+  });
+
+  // Tooltip
+  $('.tipsy').tooltip();
+  $('#contact-btn').popover();
 });
 
 function scrollToId(id)

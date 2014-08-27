@@ -1,10 +1,10 @@
 ---
-layout: nil
+layout: null
 permalink: rss/
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
+
  <title>Sean Fisher's Blog</title>
  <link href="http://seanfisher.co/rss" rel="self"/>
  <link href="http://seanfisher.co/"/>
@@ -24,5 +24,5 @@ permalink: rss/
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
- 
+
 </feed>

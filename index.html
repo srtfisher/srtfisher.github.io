@@ -3,22 +3,30 @@ layout: default
 title: Home
 ---
 
-<section class="focus-area dark home">
-  <div class="container">
-    <h2 class="leading">Hi, my name is <span class="yellow">Sean Fisher</span></h2>
-    <p class="leading">I'm a full stack developer from New York City. My specialties include WordPress, web design and custom application development. I work with businesses to create incredible applications.
-      <br />
-      <strong class="dark">Let me help create your idea today.</strong>
-    </p>
+<div itemscope itemtype="http://schema.org/Person">
+  <section class="focus-area dark home">
+    <div class="container">
+      <h2 class="leading">
+        Hi, my name is <span class="yellow" itemprop="name">Sean Fisher</span>
+      </h2>
+      <p class="leading">
+        I'm a <span itemprop="jobTitle">full stack developer</span> from
+        <span itemprop="address">New York City</span>. My specialties include
+        WordPress, web design and custom application development.
+        I work with businesses to create incredible applications.
+        <br />
+        <strong class="dark">Let me help create your idea today.</strong>
+      </p>
 
-    <div class="action-btns">
-      <div class="btn-group">
-        <a href="/services?utm_source=seanfisherco&utm_medium=cta-button&utm_content=spotlight&utm_campaign=services" class="btn btn-primary btn-lg">What I Can Do For You</a>
-        <a href="/contact?utm_source=seanfisherco&utm_medium=cta-button&utm_content=spotlight&utm_campaign=contact" class="btn btn-default btn-lg pull-right" id="spotlight-contact" data-medium="spotlight">Contact Me</a>
+      <div class="action-btns">
+        <div class="btn-group">
+          <a href="/services?utm_source=seanfisherco&utm_medium=cta-button&utm_content=spotlight&utm_campaign=services" class="btn btn-primary btn-lg">What I Can Do For You</a>
+          <a href="/contact?utm_source=seanfisherco&utm_medium=cta-button&utm_content=spotlight&utm_campaign=contact" class="btn btn-default btn-lg pull-right" id="spotlight-contact" data-medium="spotlight">Contact Me</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
 {% include recent-work.html %}
 {% include what-can-i-provide.html %}
