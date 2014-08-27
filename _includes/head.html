@@ -43,22 +43,22 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
             <li id="nav-home" {% if page.url == '/index.html' %} class="active" {% endif %}>
-              <a href="{{ site.baseurl }}" data-target="#spotlight">Home</a>
+              <a href="{{ site.baseurl }}/" data-target="#spotlight">Home</a>
             </li>
             <li id="nav-about"  {% if page.url == '/about/' %} class="active" {% endif %}>
-                <a href="{{ site.baseurl }}about" data-target="#about">About Me</a>
+                <a href="{{ site.baseurl }}/about" data-target="#about">About Me</a>
             </li>
             <li id="nav-services"  {% if page.url == '/services/' %} class="active" {% endif %}>
-                <a href="{{ site.baseurl }}services?utm_source=seanfisherco&utm_medium=link&utm_content=header&utm_campaign=services">Services</a>
+                <a href="{{ site.baseurl }}/services?utm_source=seanfisherco&utm_medium=link&utm_content=header&utm_campaign=services">Services</a>
             </li>
             <li id="nav-work">
-                <a href="{{ site.baseurl }}#work" data-target="#work">Portfolio</a>
+                <a href="{{ site.baseurl }}/#work" data-target="#work">Portfolio</a>
             </li>
             <li id="nav-blog"  {% if page.url == '/blog/' %} class="active" {% endif %}>
                 <a href="/blog">Blog</a>
             </li>
             <li id="nav-contact"  {% if page.url == '/contact/' %} class="active" {% endif %}>
-                <a href="{{ site.baseurl }}contact?utm_source=seanfisherco&utm_medium=link&utm_content=header&utm_campaign=contact" data-target="#contact" data-medium="header">Contact Me</a>
+                <a href="{{ site.baseurl }}/contact?utm_source=seanfisherco&utm_medium=link&utm_content=header&utm_campaign=contact" data-target="#contact" data-medium="header">Contact Me</a>
             </li>
             </li>
         </ul>
