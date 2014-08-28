@@ -6,7 +6,7 @@ highlighter: pygments
 markdown:    rdiscount
 permalink:   /:title
 
-baseurl: http://seanfisher.co
+baseurl: http://seanfisher.co/
 #base_url: /
 title: "Sean Fisher"
 description: "Sean Fisher (srtfisher) is full stack developer from New York City. Sean works to build web applications that are beautiful and useable. Provides services to businesses to improve profits and performance."

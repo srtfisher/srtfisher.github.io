@@ -6,7 +6,7 @@
     <div class="row">
       {% for project in site.data.work %}
         <div class="col-lg-6 col-md-6 col-sm-6 work-piece">
-          <a href="{{ site.baseurl }}/{{project.url }}" title="Permalink to {{ project.name }}">
+          <a href="{{ site.baseurl }}{{project.url }}" title="Permalink to {{ project.name }}">
             <img src="{{ project.img }}" style="max-width:100%;" width="460">
             <h3>{{ project.name }}</h3>
             <h5>{{ project.domain }}</h5>
