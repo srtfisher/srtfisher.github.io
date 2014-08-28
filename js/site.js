@@ -66,29 +66,23 @@ $(function() {
       var formData = $(this).serialize(),
           email = $(this).find('input[name="email"]').val();
 
-      $.ajax({
-        url: $(this).attr('action') + '?callback=?',
-        type: 'POST',
-        data: formData,
-        crossDomain: true
-      }).success(function(j) {
-        console.log(j);
-          if (j.status == 'ok')
-          {
-              $('.alt-btns').hide();
-              $('form.contact-form').slideUp();
-              $('#contact-sent').fadeIn();
+      $.getJSON($(this).attr('action') + '?callback=?', $(this).serialize(), function(j) {
+        if (j.status === 'sent')
+        {
+          $('.alt-btns').hide();
+          $('form.contact-form').slideUp();
+          $('#contact-sent').fadeIn();
 
-              ga('send', 'event', 'ContactFrom', 'Submit', email);
-          }
-          else
-          {
-              btn.button('reset');
-              $('#contact-error').fadeIn();
-          }
+          ga('send', 'event', 'ContactFrom', 'Submit', email);
+        }
+        else
+        {
+          btn.button('reset');
+          $('#contact-error').fadeIn();
+        }
+      }).fail(function(error) {
+        console.log(error);
       });
-
-
   });
 
   // Tooltip

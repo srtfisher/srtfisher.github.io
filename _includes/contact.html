@@ -18,7 +18,7 @@
     </div>
 
     <div class="row">
-      <form action="http://localhost:5000/contact/" method="POST" class="contact-form" data-form-type="message" enctype="multipart/form-data" {% if include.type == 'project' %} style="display:none;" {% endif %}>
+      <form action="http://frozen-refuge-6248.herokuapp.com/contact/" method="POST" class="contact-form" data-form-type="message" enctype="multipart/form-data" {% if include.type == 'project' %} style="display:none;" {% endif %}>
         <input type="hidden" name="type" value="message" />
 
         <div class="col-lg-6 col-md-6">
@@ -41,7 +41,7 @@
       </form>
     </div>
 
-    <form action="http://localhost:5000/contact/" method="POST" class="contact-form" data-form-type="project" enctype="multipart/form-data" {% if include.type != 'project' %} style="display:none;" {% endif %}>
+    <form action="http://frozen-refuge-6248.herokuapp.com/contact/" method="POST" class="contact-form" data-form-type="project" enctype="multipart/form-data" {% if include.type != 'project' %} style="display:none;" {% endif %}>
       <input type="hidden" name="type" value="project" />
       <input type="hidden" name="is-robot" id="is-robot" value="yes" />
 
@@ -100,14 +100,19 @@
     </form>
 
     <div id="contact-error" class="contact-alert error" style="display:none;">
-      <h4 class="leading">Your form contains invalid things &mdash; try and fix it!</h4>
+      <h4 class="leading">
+        Your form contains invalid things &mdash; try and fix it! If that doesn't work,
+        email me directly at <a href="mailto:hi@seanfisher.co">hi@seanfisher.co</a>
+      </h4>
     </div>
     <div id="contact-sent" class="contact-alert" style="display:none;">
       <h4 class="leading">Your message has been sent &mdash; stay tuned!</h4>
     </div>
 
     {% if {{include.single}} != 'true' %}
-    <h4 class="section-sub alt-contact">Don't prefer E Mail? I'd love to hear from you &mdash; Call me at <strong>(347) 855-7326</strong> or Skype me at <a href="skype:srtfisher?add">srtfisher</a></h4>
+      <h4 class="section-sub alt-contact">
+        Don't prefer E Mail? I'd love to hear from you &mdash; Call me at <strong>(347) 855-7326</strong> or Skype me at <a href="skype:srtfisher?add">srtfisher</a>
+      </h4>
     {% endif %}
   </div>
 </section>

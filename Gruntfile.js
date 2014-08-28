@@ -43,6 +43,10 @@ module.exports = function (grunt) {
                 command: "cp assets/site.min.js _site/assets/site.min.js"
             },
 
+            copyAssets: {
+              command: "cp -R assets _site"
+            },
+
             build: {
               command: "jekyll build"
             },
@@ -117,5 +121,5 @@ module.exports = function (grunt) {
 
     // The dev task will be used during development
     grunt.registerTask("dev", ["build", "concurrent:server"]);
-    grunt.registerTask("build", ["clean", "less:compile", "cssmin", "uglify"]);
+    grunt.registerTask("build", ["clean", "less:compile", "cssmin", "uglify", "shell:copyAssets"]);
 };
