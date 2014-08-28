@@ -1,3 +1,8 @@
+- name: ImageBrief
+  domain: imagebrief.com
+  url: work/imagebrief/
+  img: /img/about/imagebrief-sm.jpg
+
 - name: Date Night Is...
   domain: datenight.is
   url: work/datenightis/
@@ -17,11 +22,6 @@
   domain: truanttoday.com
   url: work/truanttoday/
   img: /img/work/truanttoday-sm.jpg
-
-- name: About Teens in Tech Labs
-  url: work/about-teens-in-tech-labs/
-  domain: teensintech.com
-  img: /img/work/about-teensintech.jpg
 
 - name: Teens in Tech Conference
   domain: teensintech.com

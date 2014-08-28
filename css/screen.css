@@ -481,6 +481,13 @@ section.single-work div.work-featured h2 {
   letter-spacing: -1px;
   font-size: 36px;
 }
+section.single-work div.work-featured h2 a {
+  color: #444;
+}
+section.single-work div.work-featured h2 a:hover {
+  text-decoration: none;
+  color: black;
+}
 section.single-work div.work-featured h4 {
   margin-bottom: 10px;
 }
@@ -876,12 +883,12 @@ section.blog article .content-wrap:after {
   margin: 0;
 }
 section.solutions-process {
-  margin: 25px 0;
+  margin: 50px 0;
 }
 section.solutions-process p.leading {
   width: 80%;
   text-align: center;
-  margin: 0 auto 50px;
+  margin: 0 auto 75px;
 }
 section.solutions-process .solution-item {
   text-align: center;
@@ -892,6 +899,8 @@ section.solutions-process .solution-item h4 {
 }
 section.solutions-process .solution-item p {
   font-size: 15px;
+  color: #999;
+  font-weight: 300;
 }
 .solutions-feature {
   margin: 80px 0;
@@ -1525,7 +1534,7 @@ section.solutions-process .solution-item p {
     padding-top: 50px;
   }
   section.about-panels .row {
-    height: 300px;
+    height: 330px;
     overflow: hidden;
   }
 }
