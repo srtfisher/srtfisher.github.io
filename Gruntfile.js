@@ -121,5 +121,5 @@ module.exports = function (grunt) {
 
     // The dev task will be used during development
     grunt.registerTask("dev", ["build", "concurrent:server"]);
-    grunt.registerTask("build", ["clean", "less:compile", "cssmin", "uglify", "shell:copyAssets"]);
+    grunt.registerTask("build", ["clean", "less:compile", "cssmin", "uglify", /*"shell:copyAssets"*/]);
 };

@@ -15,7 +15,7 @@
 body {
     background: #F5F5F5;
     padding-top: 81px;
-    font:14px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font: 14px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
 
     a {
         .transition (.25s);
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5 {
 
 section.focus-area {
     padding: 65px 0;
-    
+
     &.dark { background: #F4F4F4; }
     &.super-dark, &.services {
         background: #2980b9;
@@ -92,16 +92,29 @@ section.focus-area {
         .btn {
             .border-radius (0);
             padding: 12px 25px;
-            font-size: 20px;
-            line-height: 30px;
-            border-width: 3px;
+            font: 400 20px/30px @fontsans;
+            transition: 0.5s;
+
+            &.btn-primary {
+              color: rgba(255,255,255,0.9);
+              background: @brand-primary;
+              border-color: @brand-primary;
+
+              &:hover {
+                background: darken(@brand-primary, 20%);
+                border-color: darken(@brand-primary, 20%);
+              }
+            }
 
             &.btn-default {
-                border-color: #555;
-                background: transparent;
+                background: white;
+                border-color: black;
                 margin-left: 20px;
 
-                &:hover { background: white; }
+                &:hover {
+                  background: black;
+                  color: white;
+                }
             }
         }
     }
@@ -123,12 +136,9 @@ h2.leading {
 
 p.leading {
     color: #A0A0A0;
-    font-size: 21px;
-    line-height: 1.5;
     letter-spacing: 1px;
     margin: 0 0 20px;
-    font-weight: 300;
-    font-family: @fontsans;
+    font: 300 21px/1.5 @fontsans
 }
 .section-title {
     text-align: center;
@@ -141,20 +151,45 @@ p.leading {
     font-weight:300;
     text-align: center;
     margin: 0 0 20px;
+    color: #999;
+
+    strong {
+      font-weight: 500;
+    }
 }
 
-.btn.btn-flat {
-    border-width: 3px;
-    border-radius: 0;
 
-    &.btn-default {
-        border-color: black;
-    }
+.btn {
+  transition: 0.5s;
 
-    &:focus {
-        outline: none;
-        .box-shadow (none);
+  &.btn-primary {
+    border-color: @brand-primary;
+    background: @brand-primary;
+
+    &:hover {
+      border-color: darken(@brand-primary, 20%);
+      background: darken(@brand-primary, 20%);
     }
+  }
+  &.btn-flat {
+      border-width: 1px;
+      border-radius: 0;
+
+      &.btn-default {
+          border-color: black;
+
+          &:hover {
+            background: black;
+            border-color: black;
+            color: white;
+          }
+      }
+
+      &:focus {
+          outline: none;
+          .box-shadow (none);
+      }
+  }
 }
 
 @import 'sections/header.less';

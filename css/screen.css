@@ -95,17 +95,26 @@ section.focus-area .action-btns .btn {
   -moz-border-radius: 0;
   border-radius: 0;
   padding: 12px 25px;
-  font-size: 20px;
-  line-height: 30px;
-  border-width: 3px;
+  font: 400 20px/30px 'Open Sans', sans-serif;
+  transition: 0.5s;
+}
+section.focus-area .action-btns .btn.btn-primary {
+  color: rgba(255, 255, 255, 0.9);
+  background: #428bca;
+  border-color: #428bca;
+}
+section.focus-area .action-btns .btn.btn-primary:hover {
+  background: #245682;
+  border-color: #245682;
 }
 section.focus-area .action-btns .btn.btn-default {
-  border-color: #555;
-  background: transparent;
+  background: white;
+  border-color: black;
   margin-left: 20px;
 }
 section.focus-area .action-btns .btn.btn-default:hover {
-  background: white;
+  background: black;
+  color: white;
 }
 h2.leading {
   text-align: center;
@@ -120,12 +129,9 @@ h2.leading span.yellow {
 }
 p.leading {
   color: #A0A0A0;
-  font-size: 21px;
-  line-height: 1.5;
   letter-spacing: 1px;
   margin: 0 0 20px;
-  font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
+  font: 300 21px/1.5 'Open Sans', sans-serif;
 }
 .section-title {
   text-align: center;
@@ -138,13 +144,33 @@ p.leading {
   font-weight: 300;
   text-align: center;
   margin: 0 0 20px;
+  color: #999;
+}
+.section-sub strong {
+  font-weight: 500;
+}
+.btn {
+  transition: 0.5s;
+}
+.btn.btn-primary {
+  border-color: #428bca;
+  background: #428bca;
+}
+.btn.btn-primary:hover {
+  border-color: #245682;
+  background: #245682;
 }
 .btn.btn-flat {
-  border-width: 3px;
+  border-width: 1px;
   border-radius: 0;
 }
 .btn.btn-flat.btn-default {
   border-color: black;
+}
+.btn.btn-flat.btn-default:hover {
+  background: black;
+  border-color: black;
+  color: white;
 }
 .btn.btn-flat:focus {
   outline: none;
@@ -163,8 +189,6 @@ body.darker-header #global-nav {
   width: 100%;
   z-index: 600;
   border-bottom: none;
-  -webkit-box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2);
 }
 #global-nav .site-logo img {
   height: 75px;
@@ -252,10 +276,16 @@ section.portfolio-listing {
 section.portfolio-listing .work-piece {
   margin-bottom: 20px;
 }
-section.portfolio-listing a:hover {
+section.portfolio-listing .work-piece a {
+  transition: 0.5s;
+}
+section.portfolio-listing .work-piece a:hover {
   text-decoration: none;
 }
-section.portfolio-listing a:hover h3 {
+section.portfolio-listing .work-piece a:hover img {
+  opacity: 0.8;
+}
+section.portfolio-listing .work-piece a:hover h3 {
   color: #666;
 }
 section.portfolio-listing h3 {
@@ -288,12 +318,12 @@ section.portfolio-listing .btn-default {
   border: 2px solid #444;
   padding: 0 8px;
   line-height: 30px;
-  transition: 0.1s;
+  transition: 0.5s;
 }
 section.portfolio-listing .btn-default:hover {
   color: white;
-  background: #9d261d;
-  border-color: #9d261d;
+  background: black;
+  border-color: black;
 }
 section.what-i-work-on {
   background: #348CC7;
@@ -334,7 +364,7 @@ section.what-i-work-on .service-item p {
   line-height: 26px;
 }
 section.contact {
-  padding: 50px 0;
+  padding: 100px 0;
   background: #f5f5f5;
 }
 section.contact .contact-alert {
@@ -442,8 +472,17 @@ section.single-work div.work-sidebar {
 section.single-work div.work-sidebar h4 {
   border-top: 1px solid #333;
   padding-top: 20px;
-  font-size: 13px;
-  font-weight: 700;
+  text-align: center;
+  margin: 30px 0 20px;
+  padding: 0;
+}
+section.single-work div.work-sidebar h4 span {
+  position: relative;
+  top: -12px;
+  background: #F5F5F5;
+  padding: 0 10px;
+  font: 500 13px/1.5 'Open Sans', sans-serif;
+  text-transform: uppercase;
 }
 section.single-work div.work-sidebar p {
   font: normal 14px/25px 'Open Sans', sans-serif;
@@ -509,14 +548,15 @@ section.single-work div.work-featured p a {
 }
 section.single-work div.footer-container {
   border-top: 1px solid #ddd;
-  margin-top: 30px;
-  padding-top: 20px;
+  margin-top: 50px;
+  padding-top: 40px;
 }
 section.single-work div.footer-container h3 {
   font: 600 26px/30px 'Open Sans', sans-serif;
 }
 section.single-work div.footer-container p.lead {
   font: 300 18px/25px 'Open Sans', sans-serif;
+  color: #999;
 }
 section.single-work div.footer-container .btn.btn-primary {
   font-family: 'Open Sans', sans-serif;
@@ -524,10 +564,6 @@ section.single-work div.footer-container .btn.btn-primary {
   float: right;
   padding: 15px 25px;
   font-size: 22px;
-}
-section.single-work div.footer-container .btn.btn-primary:hover {
-  background: #9d261d;
-  border-color: #721c15;
 }
 #global-footer {
   padding: 30px 0;

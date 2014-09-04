@@ -4,14 +4,21 @@ section.portfolio-listing {
 
     .work-piece {
       margin-bottom: 20px;
-    }
-    
-    a:hover {
-         text-decoration: none;
 
-         h3 {
-            color: #666;
-         }
+      a {
+        transition: 0.5s;
+
+        &:hover {
+           text-decoration: none;
+
+           img {
+             opacity: 0.8;
+           }
+           h3 {
+              color: #666;
+           }
+        }
+      }
     }
 
     h3 {
@@ -48,12 +55,12 @@ section.portfolio-listing {
       border: 2px solid #444;
       padding: 0 8px;
       line-height: 30px;
-      transition: 0.1s;
+      transition: 0.5s;
 
       &:hover {
         color: white;
-        background: @red;
-        border-color: @red;
+        background: black;
+        border-color: black;
       }
     }
 }
