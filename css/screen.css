@@ -63,10 +63,6 @@ section.focus-area.super-dark span.yellow,
 section.focus-area.services span.yellow {
   color: black;
 }
-section.focus-area.super-dark .leading,
-section.focus-area.services .leading {
-  text-shadow: 0 1px 0 black;
-}
 section.focus-area.super-dark .leading span.yellow,
 section.focus-area.services .leading span.yellow {
   text-shadow: none;
