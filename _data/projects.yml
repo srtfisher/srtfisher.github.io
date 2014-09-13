@@ -2,6 +2,10 @@
   url: https://github.com/srtfisher/Lockdown-WPAdmin
   description: WordPress Plugin to hide login and admin URLs when not logged into WordPress
 
+- name: Release Tracker
+  url: https://github.com/srtfisher/release-tracker
+  description: Software Project Release Tracker. Notifies you when your projects get updated.
+
 - name: wp composer
   url: https://github.com/srtfisher/wp-composer
   description: Interface to handle Composer depdencies inside of WordPress (via WP-CLI)
