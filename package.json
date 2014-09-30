@@ -21,6 +21,7 @@
     "grunt-bower": "~0.7.0"
   },
   "dependencies": {
-    "grunt-concurrent": "^1.0.0"
+    "grunt-concurrent": "^1.0.0",
+    "load-grunt-tasks": "^0.6.0"
   }
 }
