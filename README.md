@@ -31,3 +31,8 @@ grunt build
 # Serve
 grunt serve
 ```
+
+### Please forgive me...
+I hate some things about running Jekyll on GitHub pages. Can't beat the price
+though. Forgive the fact that I have built and minified assets including in
+source control.
