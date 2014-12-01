@@ -8,7 +8,7 @@ permalink:   /:title
 
 baseurl: http://seanfisher.co/
 title: "Sean Fisher"
-description: "Sean Fisher (srtfisher) is full stack developer from New York City. Sean works to build web applications that are beautiful and useable. Provides services to businesses to improve profits and performance."
+description: "Sean Fisher is a full stack developer from New York City. Specialties include WordPress, PHP, Laravel, web design and custom application development and design. Works with businesses to create incredible web applications."
 root_desc: "Sean Fisher"
 
 rdiscount:
