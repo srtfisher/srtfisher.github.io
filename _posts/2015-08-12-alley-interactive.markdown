@@ -19,4 +19,4 @@ Alley Interactive is an exception web development firm that handles exciting new
 
 > Alley Interactive is a web development firm that tackles complex technological challenges facing top digital publishers and content producers. The team has an extensive background working with major media companies and has launched some of the largest websites for leading publishers.
 
-Working at Alley, we handle a number of projects from small media to large scale sites that handle millions of page views per day. It is exciting work and something [you should be apart of](http://www.alleyinteractive.com/hiring/).
+[Working at Alley](http://www.alleyinteractive.com/team/sean/), we handle a number of projects from small media to large scale sites that handle millions of page views per day. It is exciting work and something [you should be apart of](http://www.alleyinteractive.com/hiring/).
