@@ -1,3 +1,8 @@
+- name: Alley Interactive
+  domain: alleyinteractive.com
+  url: work/alley/
+  img: /img/work/alley-sm.jpg
+
 - name: ImageBrief
   domain: imagebrief.com
   url: work/imagebrief/
@@ -22,8 +27,3 @@
   domain: truanttoday.com
   url: work/truanttoday/
   img: /img/work/truanttoday-sm.jpg
-
-- name: Teens in Tech Conference
-  domain: teensintech.com
-  url: work/teens-in-tech-conference/
-  img: /img/work/teensintech-conf.jpg
