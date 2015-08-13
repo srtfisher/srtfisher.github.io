@@ -22,11 +22,6 @@ finding photos normally by searching and attempting to find a photo that
 matches your needs, ImageBrief will work with your to find a perfect
 image.
 
-Inheriting a young startup code base, worked to develop and implement development
-procedures to scale the product team. Building new subscription and social
-campaign features as well as cleaning up legacy code and optimizing where needed.
-Transforming the original user facing side of the application into a structured
-base for building future product features with object oriented programming.
-Transformed the integration between the front-end and back-end to be dynamic and
-responsive. Rebuilt large portions of the website to ensure visibility and quality
-user experience across all devices.
+Inheriting a young startup code base, worked to develop and implement development procedures to scale the product team. Building new subscription and social campaign features as well as cleaning up legacy code and optimizing where needed.
+
+Transforming the original user facing side of the application into a structured base for building future product features with object oriented programming. Transformed the integration between the front-end and back-end to be dynamic and responsive. Rebuilt large portions of the website to ensure visibility and quality user experience across all devices.
