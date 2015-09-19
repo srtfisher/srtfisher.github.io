@@ -20,7 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.0.*",
+    "bootstrap": "~3.3.*",
     "modernizr": "2.6.*"
   }
 }

@@ -9,33 +9,41 @@
 
 ### Summary
 
-An accomplished Software Engineer with heavy experience in a LAMP stack. Has experience building fast and efficient web applications and working collaboratively with a team in software engineering. Previous work experience includes working as a Chief Technology Officer for Truant Today, a startup that helps to keep students in the classroom and to curb truancy. Also worked as Head of Engineering for Teens in Tech Labs. Worked with various startups and clientele developing creating powerful web-based applications including Appcelerator Inc. and Anytime Experts, a online psychiatric evaluation application that provided therapy based upon a user’s symptoms. Extensive experience in developing and supporting open-source code. Proficient in oversight of an application from the code behind it to the software powering it. Eagle Scout with the Boy Scouts of America.
+An accomplished Software Engineer with heavy experience in full stack development. Has experience building fast and efficient web applications and working collaboratively with a team in software engineering.
+Currently a software developer at Alley Interactive, working with large media clients to build innovative solutions to their problems. At Alley, I have worked with software stacks such as WordPress and WordPress VIP to build scalable websites with received millions of viewers around the world.
+Previously a Software Engineer at ImageBrief, a NYC Startup working in the stock photography market. Eagle Scout, Boy Scouts of America.
 
 ------
 
 ### Experience
 
+Alley Interactive
+: *Software Developer*
+  __November 2014 - Present__
+
+  Alley Interactive is a web development firm specializing in solutions for large media companies. My roles include developing and maintaining various large media sites with technologies such as WordPress, WordPress VIP, Drupal etc.
+
 ImageBrief
 : *Software Developer*
-__January 2014 - Present__
+  __January 2014 - November 2014__
 
   Inheriting a young startup code base, worked to develop and implement development procedures to scale the product team. Building new subscription and social campaign features as well as cleaning up legacy code and optimizing where needed. Transforming the original user facing side of the application into a structured base for building future product features with object oriented programming. Transformed the integration between the front-end and back-end to be dynamic and responsive. Rebuilt large portions of the website to ensure visibility and quality user experience across all devices.
 
 Date Night Is...
 : *Software Developer*
-__August 2013 - Present__
+  __August 2013 - Present__
 
   A complete rewrite and pivot of direction for the product. Developing the entire product to ensure a scalable and responsive end user experience. Pulling in from various providers and abstracting information from each. From there, building out a sorting algorithm to rank each entry with preference to business logic, knowledge about the user, relevancy to the location of the date and the recency to when it was added. After completion of project, reviewing the usage of the minimum viable product to see usage of the product and to tweak where needed as the project grew.
 
 Monimus
 : *Software Developer*
-__September 2013 - January 2014__
+  __September 2013 - January 2014__
 
   Implementing designs into an Angular.js based project. Building the initial stages of the process and ensuring a clean user experience for the various use cases of the product. The dynamic integration between backend and the frontend allowed the user to have a real-time interaction with other users of the web service.
 
 TruantToday Inc.
 : *Chief Technology Officer*
-__August 2011 - January 2013__
+  __August 2011 - January 2013__
 
   Chief Technology Officer for Truant Today, a startup that keeps students in the classroom. Developed the entire web application that allows teachers, school administrators, and other school officials to notify parents/guardians when a student is absent or when other important events have occurred regarding their student. This application works with other School Information Systems (SIS), such as Power Schools, to make the experience for teachers as simple as possible. TruantToday competed in the NBC Education Nation Innovation Challenge program in the fall of 2011. TruantToday came in second place, receiving fifteen thousand dollars in prize money. Also completed another small round of funding.
 
@@ -44,7 +52,7 @@ __August 2011 - January 2013__
 
 Teens in Tech Labs
 : *Head of Engineering*
-__August 2010 - June 2013__
+  __August 2010 - June 2013__
 
   Started as a developer and progressed to the Head of Engineering/CTO role. Worked to develop Connect, a product that allows for entrepreneurs to “connect” across the world. The application allowed users to work collaboratively and spark a conversation with others. Also developed a Teens in Tech Incubator program which is used as a tool to incubate and grow new startups. We worked with various heads of industry from large technology companies, such as Google and PayPal, to teach the young entrepreneurs the skills they need for success. In June 2011, a Teens in Tech Conference was held in Washington and was attended by business leaders as well as representatives from Congress and the White House. The annual conference was held in August of 2011 and 2012 that many attended and viewed online.
 

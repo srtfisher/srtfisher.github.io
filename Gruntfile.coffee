@@ -57,7 +57,10 @@ module.exports = (grunt) ->
         command: "jekyll serve --watch --drafts --baseurl=/"
 
       buildpdf:
-        command: "./bin/md2resume pdf _includes/resume.md ./ --template=modern && mv resume.pdf Sean-Fisher-Resume.pdf"
+        command: "./bin/md2resume pdf _includes/resume.md ./ --template=modern"
+
+      copyresume:
+        command: "mv ./resume.pdf ./Sean-Fisher-Resume.pdf"
 
     uglify:
       site:
@@ -74,12 +77,6 @@ module.exports = (grunt) ->
             "bower_components/bootstrap/js/popover.js"
             "js/site.js"
           ]
-
-    bower:
-      dev:
-        dest: "dest/path"
-        options:
-          basePath: "components/"
 
     concurrent:
       server:
@@ -99,7 +96,7 @@ module.exports = (grunt) ->
     grunt.log.writeln ""
     grunt.log.writeln "* run 'grunt --help' to get an overview of all commands."
     grunt.log.writeln "* run 'grunt dev' to start developing."
-    grunt.log.writeln "* run `resume` to build the PDF resume"
+    grunt.log.writeln "* run `grunt resume` to build the PDF resume"
     return
 
   # The dev task will be used during development
@@ -117,6 +114,7 @@ module.exports = (grunt) ->
 
   grunt.registerTask "resume", [
     "shell:buildpdf"
+    "shell:copyresume"
   ]
 
   return
