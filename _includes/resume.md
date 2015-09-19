@@ -9,9 +9,7 @@
 
 ### Summary
 
-An accomplished Software Engineer with heavy experience in full stack development. Has experience building fast and efficient web applications and working collaboratively with a team in software engineering.
-Currently a software developer at Alley Interactive, working with large media clients to build innovative solutions to their problems. At Alley, I have worked with software stacks such as WordPress and WordPress VIP to build scalable websites with received millions of viewers around the world.
-Previously a Software Engineer at ImageBrief, a NYC Startup working in the stock photography market. Eagle Scout, Boy Scouts of America.
+An accomplished Software Engineer with heavy experience in full stack development. Has experience building fast and efficient web applications and working collaboratively with a team in software engineering. Currently a software developer at Alley Interactive, working with large media clients to build innovative solutions to their problems. At Alley, I have worked with software stacks such as WordPress and WordPress VIP to build scalable websites with received millions of viewers around the world. Previously a Software Engineer at ImageBrief, a NYC Startup working in the stock photography market. Eagle Scout, Boy Scouts of America.
 
 ------
 
