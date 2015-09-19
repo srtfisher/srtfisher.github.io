@@ -32,6 +32,12 @@ grunt build
 grunt serve
 ```
 
+To build the resume:
+
+```bash
+grunt resume
+```
+
 ### Please forgive me...
 I hate some things about running Jekyll on GitHub pages. Can't beat the price
 though. Forgive the fact that I have built and minified assets including in
