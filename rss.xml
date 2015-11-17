@@ -20,7 +20,7 @@ permalink: rss/
    <title>{{ post.title }}</title>
    <link href="http://seanfisher.co{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://tom.preston-werner.com{{ post.id }}</id>
+   <id>http://seanfisher.co{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
