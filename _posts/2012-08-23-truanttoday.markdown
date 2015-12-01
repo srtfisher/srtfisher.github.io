@@ -13,7 +13,6 @@ work_performed:
 - Twilio SMS/Call Intergration
 - International Support
 image: /img/work/truanttoday.jpg
-url: 'http://truanttoday.com/'
 domain: 'truanttoday.com'
 tags: []
 ---
