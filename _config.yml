@@ -7,8 +7,8 @@ markdown:    rdiscount
 permalink:   /:title
 
 baseurl: http://seanfisher.co/
-title: "Sean Fisher - A Web Developer from New York City"
-description: "Sean Fisher is a full stack developer from New York City. Specialties include WordPress, PHP, Laravel, web design and custom application development and design. Works with businesses to create incredible web applications."
+title: "Sean Fisher - A Software Developer from New York City"
+description: "Sean Fisher is a full stack software developer from New York City. Specialties include WordPress, PHP, Laravel, WordPress VIP, web design and custom application development. Works with businesses to create incredible web applications."
 root_desc: "Sean Fisher"
 
 rdiscount:
