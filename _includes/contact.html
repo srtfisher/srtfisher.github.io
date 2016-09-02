@@ -5,6 +5,7 @@
     <h4 class="section-sub">We should be in touch. Shoot Sean an email below and he'll get back to you within <strong class="tipsy" title="That is, of course, if I'm not away on a much needed vacation!">one day</strong>.</h4>
     {% endif %}
 
+    <!--
     <div class="alt-btns row">
       <div class="col-lg-3 col-md-3 col-sm-4 left col-lg-push-3 col-md-push-3 col-sm-push-2">
         <p>Want to chat with me?</p>
@@ -16,6 +17,7 @@
         <a href="#" data-type="project" class="btn btn-flat btn-{% if include.type == 'project' %}primary{% else %}default{% endif %} btn-lg btn-block">Start a Project</a>
       </div>
     </div>
+    -->
 
     <div class="row">
       <form action="http://frozen-refuge-6248.herokuapp.com/contact/" method="POST" class="contact-form" data-form-type="message" enctype="multipart/form-data" {% if include.type == 'project' %} style="display:none;" {% endif %}>
