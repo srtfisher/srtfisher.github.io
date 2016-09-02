@@ -4,4 +4,8 @@ permalink: robots.txt
 ---
 # Hi Robots
 
+User-Agent: *
+Disallow: /start-a-project/
+Disallow: /services/
+
 Sitemap: http://seanfisher.co/sitemap.xml
