@@ -5,15 +5,15 @@
 
 - name: ImageBrief
   domain: imagebrief.com
-  url: work/imagebrief/
+  url: http://seanfisher.co/work/imagebrief/
   img: /img/about/imagebrief-sm.jpg
 
 - name: Date Night Is...
   domain: datenight.is
-  url: work/datenightis/
+  url: http://seanfisher.co/work/datenightis/
   img: /img/work/datenight-sm.jpg
 
 - name: Appcelerator Inc.
   domain: appcelerator.com
-  url: work/appcelerator-inc/
+  url: http://seanfisher.co/work/appcelerator-inc/
   img: /img/work/appcelerator-sm.jpg
