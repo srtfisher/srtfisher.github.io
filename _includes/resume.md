@@ -16,7 +16,7 @@ An accomplished Software Engineer with heavy experience in full stack developmen
 ### Experience
 
 Alley Interactive
-: *Software Developer*
+: *Principle Software Developer*
 __November 2014 - Present__
 
   Alley Interactive is a media focused software development firm specializing in solutions for large media companies. My roles include developing and maintaining various large media sites reaching millions of people each day with technology stacks such as WordPress, WordPress VIP, Drupal etc. Worked with Agile and SCRUM based processes using JIRA and Redmine tools.
