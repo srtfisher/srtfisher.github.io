@@ -10,8 +10,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  background: #00ebcb;
-  border-color: #00ebcb;
+a:hover,
+a:focus {
+  background: #01d8bb;
+  border-color: #01d8bb;
   color: white;
 }
