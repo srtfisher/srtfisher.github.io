@@ -5,6 +5,8 @@ node_modules/
 vendor/
 bower_components/
 npm-debug.log
+.jekyll-*
 .jekyll-cache
+.jekyll-metadata
 .vscode
 yarn.lock
