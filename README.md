@@ -1,47 +1,26 @@
-This is my site
-=========
+# SeanFisher.co
 
-You can see it in action at <http://seanfisher.co/>. It is powered by [Jekyll](http://github.com/mojombo/jekyll) and is transformed into an actual site when I push to GitHub.
+You can see it in action at <http://seanfisher.co/>. It is powered by
+[Jekyll](http://github.com/mojombo/jekyll) and is transformed into an actual
+site when I push to GitHub via a GitHub action. All compiled assets are kept out
+of source control (outside of `gh-pages`).
 
-Seanfisher.co is a marketing/personal blog site for information about my portfolio and services. Overtime, one can see the changes in copy, design, ideas etc. to build out the site and further sell the brand.
+Seanfisher.co is a marketing/personal blog site for information about me.
 
-### License
+## License
 I herby license all content in the `_posts` and `img` directories. You may not reuse anything inside them, all copyrighted by myself.
 
-Everything else is MIT, fair game--use it.
+Everything else is MIT, fair game--use it if you want to.
 
-### Prerequisites
-Prerequisites:
+## Setup
 
-- [Node.js](https://nodejs.org/en/)
-- [Bower](http://bower.io/)
-- [Grunt](http://gruntjs.com/)
-- [Jekyll](https://jekyllrb.com/)
-- [PHP](http://php.net/) (for building the resume)
-- [wkhtmltopdf](http://wkhtmltopdf.org/downloads.html#stable) (for building the resume)
+The setup is based off of
+[oddstronaut/jekyll-starter-tailwind](https://github.com/oddstronaut/jekyll-starter-tailwind).
 
-### Building
-To build the site, run this:
+* `bundle install` to install Ruby gems
+* `npm ci` to install npm packages listed in `package-lock.json`
+* `npm run start` or `npm run dev` to compile the site with development settings and run BrowserSync
 
-```bash
-# Install npm packages
-npm install
-
-# assumes you installed bower
-bower install
-
-# assumes you installed grunt
-grunt build
-
-# Serve
-grunt dev
-```
-
-To build the resume:
-
-```bash
-grunt resume
-```
-
-### Please forgive me...
-I hate some things about running Jekyll on GitHub pages. Can't beat the price though. Forgive the fact that I have built and minified assets including in source control.
+## Build your site
+* `npm run build:dev` to compile the site with development settings
+* `npm run build:production` or `npm run build` to compile the site for production
