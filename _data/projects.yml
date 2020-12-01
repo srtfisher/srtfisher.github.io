@@ -1,51 +1,35 @@
+- name: Mantle
+  url: https://mantle.alley.co/
+  description: Mantle is a framework for building large, robust websites and applications with WordPress
+
+- name: NBCUniversal Owned Television Stations
+  url: https://alley.co/work/nbc-and-telemundo-owned-stations-replatform/
+  description: Worked to build a digital publishing platform that powers 42 NBCUniversal television stations across the U.S. and Puerto Rico.
+
+- name: internal-flags
+  url: https://github.com/alleyinteractive/internal-flags/
+  description: Use a hidden taxonomy to improve expensive queries.
+
+- name: Online News Association Resources Portal
+  url: https://alley.co/work/ona-resources-portal/
+  description: Worked to create a unified portal for years of ONA conferences and resources to educate journalists and members far into the future.
+
+- name: logger
+  url: https://github.com/alleyinteractive/logger/
+  description: A logger tool that stores errors and messages as a custom post type
+
+- name: The Points Guy
+  url: https://alley.co/work/the-points-guy/
+  description: Worked to create a bold new experience for frequent flyers and aviation fans alike.
+
 - name: Lockdown WP Admin
   url: https://github.com/srtfisher/Lockdown-WPAdmin
   description: WordPress Plugin to hide login and admin URLs when not logged into WordPress
 
-- name: Release Tracker
-  url: https://github.com/srtfisher/release-tracker
-  description: Software Project Release Tracker. Notifies you when your projects get updated.
-
-- name: wp composer
+- name: wp-composer
   url: https://github.com/srtfisher/wp-composer
-  description: Interface to handle Composer depdencies inside of WordPress (via WP-CLI)
-
-- name: automatic
-  url: https://github.com/srtfisher/automatic
-  description: PHP 5.4+ Automatic API Library 
+  description: Interface to handle Composer dependencies inside of WordPress (via WP-CLI)
 
 - name: time-iterator
   url: https://github.com/srtfisher/time-iterator
   description: Time Iterator to request data for specific intervals of time.
-
-- name: Open Graph Protocol Tools
-  url: https://github.com/srtfisher/open-graph-protocol-tools
-  description: Namespaced PHP Open Graph Protocol Builder/Fetcher
-
-- name: dotfiles
-  url: https://github.com/srtfisher/dotfiles
-  description: Sharing the configuration to my setup to help others.
-
-- name: Web Consumer Manager
-  url: https://github.com/wconsumer/wconsumer
-  description: A management interface to building out web services in Drupal.
-
-- name: CLASS Personal Learning Assessment
-  url: https://github.com/srtfisher/njit-class
-  description: An undergraduate research project at NJIT to review a new approach to learning in the classroom.
-
-- name: toaster
-  url: https://github.com/srtfisher/toaster
-  description: A Namespaced and PHP 5.4-esq setup to WordPress on the command line. WIP
-
-- name: Visual Data
-  url: https://github.com/matei1987/visualData
-  description: Add some beauty to visualizing state spending in the United States.
-
-- name: Codeigniter Features
-  url: https://github.com/srtfisher/Codeigniter-Features
-  description: Disable or enable features for users in Codeignite.
-
-- name: Codeigniter Remap
-  url: https://github.com/srtfisher/CodeIgniter-Remap
-  description: Adding some beauty into CodeIgniter's method names. A rest-ful core plugin that can allow you to make beautiful method names with no PHP-naming limitation.

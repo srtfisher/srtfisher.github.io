@@ -3,7 +3,6 @@ destination: ./_site
 includes:    ./_includes
 
 highlighter: pygments
-markdown:    rdiscount
 permalink:   /:title
 
 baseurl: http://seanfisher.co/
@@ -13,8 +12,5 @@ root_desc: "Sean Fisher"
 
 rdiscount:
   extensions: []
-
-paginate: 10
-paginate_path: blog/:num
 
 exclude: ['README', 'Gruntfile.coffee', 'less', 'css/screen.css']
