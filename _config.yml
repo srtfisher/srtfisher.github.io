@@ -6,11 +6,11 @@ highlighter: pygments
 permalink:   /:title
 
 baseurl: http://seanfisher.co/
-title: "Sean Fisher - Software Developer from New York City"
-description: "Sean Fisher is a full stack software developer from New York City. Specialties include WordPress, PHP, Laravel, WordPress VIP, web design and custom application development. Works with businesses to create incredible web applications."
+title: "Sean Fisher - Principal Software Developer from New York City"
+description: "Sean Fisher is a principal software developer from New York City. Specialties include WordPress, PHP, Laravel, WordPress VIP, web design and custom application development. Creates enterprise applications with WordPress"
 root_desc: "Sean Fisher"
 
 rdiscount:
   extensions: []
 
-exclude: ['README', 'Gruntfile.coffee', 'less', 'css/screen.css']
+exclude: ['README.md', '.github', 'tailwind.config.js', 'src', 'css/screen.css']
