@@ -35,6 +35,6 @@
   },
   "homepage": "https://github.com/srtfisher/srtfisher.github.io#readme",
   "dependencies": {
-    "postcss": "^8.1.10"
+    "postcss": "^8.2.10"
   }
 }
