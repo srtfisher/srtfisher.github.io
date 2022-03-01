@@ -6,6 +6,10 @@
   url: https://alley.co/work/nbc-and-telemundo-owned-stations-replatform/
   description: Worked to build a digital publishing platform that powers 42 NBCUniversal television stations across the U.S. and Puerto Rico.
 
+- name: composer-wordpress-autoloader
+  url: https://github.com/alleyinteractive/composer-wordpress-autoloader
+  description: Composer Autoloader for WordPress Coding Standards Classes
+
 - name: internal-flags
   url: https://github.com/alleyinteractive/internal-flags/
   description: Use a hidden taxonomy to improve expensive queries.
