@@ -6,8 +6,8 @@ highlighter: pygments
 permalink:   /:title
 
 baseurl: https://seanfisher.co
-title: "Sean Fisher - Principal Software Developer from New York City"
-description: "Sean Fisher is a principal software developer from New York City. Specialties include WordPress, PHP, Laravel, WordPress VIP, web design and custom application development. Creates enterprise applications with WordPress"
+title: "Sean Fisher - Principal Software Architect from New York City"
+description: "Sean Fisher is a principal software architect from New York City. Specialties include WordPress, PHP, Laravel, WordPress VIP, web design and custom application development. Creates enterprise applications with WordPress"
 root_desc: "Sean Fisher"
 
 rdiscount:
