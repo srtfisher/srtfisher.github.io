@@ -13,4 +13,4 @@ root_desc: "Sean Fisher"
 rdiscount:
   extensions: []
 
-exclude: ['README.md', '.github', 'tailwind.config.js', 'src', 'css/screen.css']
+exclude: ['README.md', '.github', 'tailwind.config.js', 'src', 'css/screen.css', 'node_modules']
