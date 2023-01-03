@@ -4,7 +4,7 @@
   "description": "This is my site =========",
   "main": "gulpfile.babel.js",
   "devDependencies": {
-    "autoprefixer": "^9.0.0",
+    "autoprefixer": "^10.4.13",
     "babel-preset-env": "1.7.0",
     "babel-register": "6.26.0",
     "browser-sync": "2.26.13",
@@ -12,9 +12,10 @@
     "cross-spawn": "7.0.3",
     "cssnano": "4.1.10",
     "gulp": "4.0.2",
-    "gulp-postcss": "8.0.0",
+    "gulp-postcss": "^9.0.0",
+    "postcss": "^8.4.20",
     "postcss-import": "12.0.1",
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "^3.2.4"
   },
   "scripts": {
     "build:production": "cross-env NODE_ENV=production gulp",
@@ -27,14 +28,5 @@
     "type": "git",
     "url": "git+https://github.com/srtfisher/srtfisher.github.io.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/srtfisher/srtfisher.github.io/issues"
-  },
-  "homepage": "https://github.com/srtfisher/srtfisher.github.io#readme",
-  "dependencies": {
-    "postcss": "^8.1.10"
-  }
+  "license": "MIT"
 }
