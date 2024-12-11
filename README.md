@@ -1,6 +1,6 @@
 # SeanFisher.co
 
-You can see it in action at <http://seanfisher.co/>. It is powered by
+You can see it in action at <https://seanfisher.co/>. It is powered by
 [Jekyll](http://github.com/mojombo/jekyll) and is transformed into an actual
 site when I push to GitHub via a GitHub action. All compiled assets are kept out
 of source control (outside of `gh-pages`).

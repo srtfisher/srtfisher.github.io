@@ -4,8 +4,12 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
+:root {
+  --brand-bright: #00f5d4;
+}
+
 a {
-  border-bottom: 1px solid #00f5d4;
+  border-bottom: 1px solid var(--brand-bright);
   padding-bottom: 2px;
   text-decoration: none;
 }

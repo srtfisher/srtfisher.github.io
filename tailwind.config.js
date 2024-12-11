@@ -8,11 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brandBright: '#00f5d4',
-        brandBrightDarker: '#00ebcb',
+        brandBright: 'var(--brand-bright)',
+        brandBrightDarker: '#02ddc0',
+        brandBrightDarkerDarkMode: '#01c6ac',
       },
       fontFamily: {
-        serif: ['Playfair Display', 'serif'],
+        serif: ['Libre Baskerville', 'serif'],
       },
     },
   },
