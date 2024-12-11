@@ -4,11 +4,17 @@ layout: default
 
 <div class="max-w-3xl py-16 mx-auto md:py-20 lg:py-32 dark:text-white">
   <h3 class="mb-6 font-serif text-5xl leading-relaxed md:leading-normal">Hi, my name is <span
-  class="px-1 text-white bg-brandBrightDarker dark:bg-brandBrightDarkerDarkMode">Sean Fisher</span></h3>
+  class="inline-block px-1 text-white bg-brandBrightDarker dark:bg-brandBrightDarkerDarkMode">Sean Fisher</span></h3>
   <p class="font-serif text-xl leading-8">
-    Principal Software Architect at <a href="https://alley.co/" target="_blank">Alley</a>. Full stack software developer from
-    New York City. My specialties include Laravel, WordPress and enterprise
-    media applications.
+    <img src="/img/hello.webp" width="150" height="150" class="float-left w-24 mb-5 mr-5 rounded-full shadow-lg lg:w-40" alt="Sean Fisher" />
+    I am a Principal Software Architect at <a href="https://alley.co/" target="_blank">Alley</a> and a Full stack software developer from
+    NYC. My work focuses on crafting solutions in WordPress, Laravel, and enterprise publishing applications, leveraging years of experience in innovative software development.
+  </p>
+  <p class="mt-5 font-serif text-xl leading-8">
+    My passion lies in developing open-source software and shared solutions for
+    the WordPress and PHP community. As a WordPress core contributor, I've
+    created several plugins and packages widely adopted by websites around the
+    globe.
   </p>
 </div>
 
@@ -17,9 +23,9 @@ layout: default
     Here is some of my work:
   </h4>
 
-  <dl class="my-5">
+  <dl class="my-5 space-y-5">
     {% for project in site.data.projects %}
-      <dt class="mt-3">
+      <dt class="space-y-1">
         <h4><a href="{{ project.url }}" class="text-black dark:text-white">{{ project.name }}</a></h4>
         <p class="text-gray-600 dark:text-gray-400">{{ project.description }}</p>
       </dt>

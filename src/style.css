@@ -6,6 +6,13 @@
 
 :root {
   --brand-bright: #00f5d4;
+  --link-hover: #01d8bb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand-bright: #01c6ac;
+  }
 }
 
 a {
@@ -16,7 +23,7 @@ a {
 
 a:hover,
 a:focus {
-  background: #01d8bb;
-  border-color: #01d8bb;
+  background: var(--brand-bright);
+  border-color: var(--brand-bright);
   color: white;
 }

@@ -13,6 +13,7 @@ module.exports = {
         brandBrightDarkerDarkMode: '#01c6ac',
       },
       fontFamily: {
+        sans: ['Open Sans', 'sans-serif'],
         serif: ['Libre Baskerville', 'serif'],
       },
     },
