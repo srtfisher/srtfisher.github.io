@@ -1,0 +1,27 @@
+- name: Mantle
+  url: https://mantle.alley.co/
+  description: Mantle is a framework for building large, robust websites and applications with WordPress. Notably, it also includes Mantle Testkit, a powerful testing framework for WordPress.
+
+- name: create-wordpress-plugin
+  url: https://github.com/alleyinteractive/create-wordpress-plugin
+  description: A starting repository for WordPress plugins.
+
+- name: composer-wordpress-autoloader
+  url: https://github.com/alleyinteractive/composer-wordpress-autoloader
+  description: Composer Autoloader that supports the WordPress Coding Standards.
+
+- name: internal-flags
+  url: https://github.com/alleyinteractive/internal-flags/
+  description: Use a hidden taxonomy to improve expensive queries.
+
+- name: logger
+  url: https://github.com/alleyinteractive/logger/
+  description: A Monolog-based logging tool for WordPress. Supports storing log message in a custom post type or in individual posts and terms.
+
+- name: pest-plugin-wordpress
+  url: https://github.com/alleyinteractive/pest-plugin-wordpress/
+  description: A Pest plugin for WordPress.
+
+- name: Lockdown WP Admin
+  url: https://github.com/srtfisher/Lockdown-WPAdmin
+  description: WordPress Plugin to hide login and admin URLs when not logged into WordPress

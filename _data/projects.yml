@@ -1,39 +1,15 @@
-- name: Mantle
-  url: https://mantle.alley.co/
-  description: Mantle is a framework for building large, robust websites and applications with WordPress
+- name: New York Post
+  url: https://alley.com/results/new-york-post/
+  description: Redesigned one of the nation’s largest newspapers on WordPress VIP, spearheaded the development of a premium sports product and membership system, and managed the project’s daily development operations.
 
 - name: NBCUniversal Owned Television Stations
-  url: https://alley.co/work/nbc-and-telemundo-owned-stations-replatform/
+  url: https://alley.com/results/nbc-and-telemundo-owned-stations-replatform/
   description: Worked to build a digital publishing platform that powers 42 NBCUniversal television stations across the U.S. and Puerto Rico.
 
-- name: composer-wordpress-autoloader
-  url: https://github.com/alleyinteractive/composer-wordpress-autoloader
-  description: Composer Autoloader for WordPress Coding Standards Classes
-
-- name: internal-flags
-  url: https://github.com/alleyinteractive/internal-flags/
-  description: Use a hidden taxonomy to improve expensive queries.
-
 - name: Online News Association Resources Portal
-  url: https://alley.co/work/ona-resources-portal/
+  url: https://alley.com/results/ona-resources-portal/
   description: Worked to create a unified portal for years of ONA conferences and resources to educate journalists and members far into the future.
 
-- name: logger
-  url: https://github.com/alleyinteractive/logger/
-  description: A logger tool that stores errors and messages as a custom post type
-
 - name: The Points Guy
-  url: https://alley.co/work/the-points-guy/
+  url: https://alley.com/results/the-points-guy/
   description: Worked to create a bold new experience for frequent flyers and aviation fans alike.
-
-- name: Lockdown WP Admin
-  url: https://github.com/srtfisher/Lockdown-WPAdmin
-  description: WordPress Plugin to hide login and admin URLs when not logged into WordPress
-
-- name: wp-composer
-  url: https://github.com/srtfisher/wp-composer
-  description: Interface to handle Composer dependencies inside of WordPress (via WP-CLI)
-
-- name: time-iterator
-  url: https://github.com/srtfisher/time-iterator
-  description: Time Iterator to request data for specific intervals of time.

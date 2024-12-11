@@ -20,9 +20,22 @@ layout: default
 
 <div class="max-w-2xl mx-auto">
   <h4 class="font-serif text-sm dark:text-white">
-    Here is some of my work:
+    Here is some of my open-source work:
   </h4>
+  <dl class="my-5 space-y-5">
+    {% for project in site.data.open-source-projects %}
+      <dt class="space-y-1">
+        <h4><a href="{{ project.url }}" class="text-black dark:text-white">{{ project.name }}</a></h4>
+        <p class="text-gray-600 dark:text-gray-400">{{ project.description }}</p>
+      </dt>
+    {% endfor %}
+  </dl>
+</div>
 
+<div class="max-w-2xl mx-auto mt-8">
+  <h4 class="font-serif text-sm leading-6 dark:text-white">
+    You can find all of my contributions on my <a href="https://github.com/srtfisher/">GitHub</a>. Additionally, here are some of my client projects:
+  </h4>
   <dl class="my-5 space-y-5">
     {% for project in site.data.projects %}
       <dt class="space-y-1">
