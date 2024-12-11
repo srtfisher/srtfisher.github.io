@@ -10,9 +10,9 @@
   url: https://github.com/alleyinteractive/composer-wordpress-autoloader
   description: Composer Autoloader that supports the WordPress Coding Standards.
 
-- name: internal-flags
-  url: https://github.com/alleyinteractive/internal-flags/
-  description: Use a hidden taxonomy to improve expensive queries.
+- name: wp-rest-api-guard
+  url: https://wordpress.org/plugins/rest-api-guard/
+  description: Restrict and control access to the REST API
 
 - name: logger
   url: https://github.com/alleyinteractive/logger/
